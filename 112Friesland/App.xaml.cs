@@ -33,6 +33,11 @@ namespace _112Friesland
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
+            if (MainPage.Instance != null)
+            {
+                MainPage.Instance.LoadData(true);
+            }
+
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active.
             if (rootFrame == null)
@@ -82,7 +87,7 @@ namespace _112Friesland
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter.
-                if (!rootFrame.Navigate(typeof(PivotPage), e.Arguments))
+                if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
                 {
                     throw new Exception("Failed to create initial page");
                 }

@@ -82,9 +82,12 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundTask.cs" />
     <Compile Include="Data\DataHandler.cs" />
     <Compile Include="Data\Logics\NewsLink.cs" />
     <Compile Include="Data\Logics\NewsLinkParser.cs" />
+    <Compile Include="Data\Logics\NewsPage.cs" />
+    <Compile Include="Data\Logics\NewsPageParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

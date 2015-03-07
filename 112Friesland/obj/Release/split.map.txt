@@ -1,0 +1,19 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-240"
+"ResourceDimensions"		"language-nl-nl"
+
+[Files]
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\split.pri"			"resources.pri"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\MainPage.xbf"			"MainPage.xbf"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\ItemPage.xbf"			"ItemPage.xbf"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Common\ReadMe.txt"			"Common\ReadMe.txt"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\WideLogo.scale-240.png"			"Assets\WideLogo.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\StoreLogo.scale-240.png"			"Assets\StoreLogo.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\Square71x71Logo.scale-240.png"			"Assets\Square71x71Logo.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\SplashScreen.scale-240.png"			"Assets\SplashScreen.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\SmallLogo.scale-240.png"			"Assets\SmallLogo.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\Logo.scale-240.png"			"Assets\Logo.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\Banner.png"			"Assets\Banner.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\Assets\BadgeLogo.scale-240.png"			"Assets\BadgeLogo.scale-240.png"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\App.xbf"			"App.xbf"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\PackageLayout\112Friesland.xr.xml"			"112Friesland.xr.xml"

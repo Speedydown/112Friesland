@@ -1,89 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="DefaultViewModel" />
-    <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="ImageList" />
+    <RootPropertyPathName Name="AuthorDate" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="ContentSummary" />
     <RootPropertyPathName Name="Title" />
-    <RootPropertyPathName Name="SecondGroup" />
-    <RootPropertyPathName Name="Items" />
-    <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="FirstGroup" />
+    <RootPropertyPathName Name="ImageURL" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
-    <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="DataContext" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Transitions" />
       <RootProperty Name="Content" />
       <RootProperty Name="BottomAppBar" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="RelativeSource" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ChildrenTransitions" />
+      <RootProperty Name="Height" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="ZoomMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="Tapped" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
-      <RootProperty Name="DefaultNavigationTransitionInfo" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo">
       <RootMethod Name="GetExitElementContainer" />
       <RootMethod Name="SetExitElementContainer" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="ChildrenTransitions" />
-      <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Children" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="CharacterSpacing" />
-      <RootProperty Name="TextWrapping" />
-    </RootType>
-    <RootType FullName="_112Friesland.ItemPage" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.CommonNavigationTransitionInfo">
-      <RootProperty Name="IsStaggeringEnabled" />
-      <RootMethod Name="GetIsStaggerElement" />
-      <RootMethod Name="SetIsStaggerElement" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
-      <RootProperty Name="Title" />
-      <RootProperty Name="Items" />
-      <RootMethod Name="GetSlideInAnimationGroup" />
-      <RootMethod Name="SetSlideInAnimationGroup" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="ItemTemplate" />
-      <RootEvent Name="ItemClick" />
-      <RootEvent Name="Loaded" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsIndeterminate" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="_112Friesland.ItemPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="PrimaryCommands" />
       <RootProperty Name="SecondaryCommands" />
     </RootType>
@@ -92,6 +118,6 @@
       <RootProperty Name="Icon" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="_112Friesland.PivotPage" />
+    <RootType FullName="_112Friesland.MainPage" />
   </Roots.RootTypes>
 </Roots>
