@@ -1,1 +1,1 @@
-C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\AppPackages\112Friesland_1.1.0.0_Test\112Friesland_1.1.0.0_AnyCPU.appxbundle
+C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\AppPackages\112Friesland_1.1.0.1_Test\112Friesland_1.1.0.1_AnyCPU.appxbundle

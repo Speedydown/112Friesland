@@ -84,6 +84,7 @@ namespace _112Friesland
             {
                 NewsPage NP = await DataHandler.GetNewsPageFromURL(URL);
                 LayoutRoot.DataContext = NP;
+                ArticleCounter.AddArticleCount();
             }
             catch (Exception)
             {

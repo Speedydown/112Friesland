@@ -29,6 +29,7 @@ namespace _112Friesland
         public static MainPage Instance { get; private set; }
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private List<NewsLink> NewsLinks;
 
         public MainPage()
         {
@@ -67,12 +68,13 @@ namespace _112Friesland
             LoadingBar.Visibility = Windows.UI.Xaml.Visibility.Visible;
             ErrorGrid.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
 
-            if (LastLoadedDT == null || DateTime.Now.Subtract((DateTime)LastLoadedDT).TotalMinutes > 5)
+            if (LastLoadedDT == null || NewsLinks == null || DateTime.Now.Subtract((DateTime)LastLoadedDT).TotalMinutes > 5)
             {
                 try
                 {
-                    List<NewsLink> NewsLinks = (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
+                    NewsLinks = (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
                     NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(2));
+
                     this.ContentListview.ItemsSource = NewsLinks;
 
                     if (LastLoadedDT == null)
@@ -91,10 +93,25 @@ namespace _112Friesland
                     {
 
                     }
+
+                    LastLoadedDT = DateTime.Now;
                 }
                 catch (Exception)
                 {
+                    NewsLinks = null;
                     ErrorGrid.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                }
+            }
+            else
+            {
+                try
+                {
+                    this.ContentListview.ItemsSource = NewsLinks;
+                }
+                catch
+                {
+
+
                 }
             }
 
