@@ -34,7 +34,12 @@ namespace _112FrieslandLogic
             return NewsPageParser.GetNewsPageFromSource(PageSource);
         }
 
-        private static async Task<string> GetDataFromURL(string URL)
+        public static IAsyncOperation<string> GetDataFromURL(string URL)
+        {
+            return GetDataFromURLHelper(URL).AsAsyncOperation();
+        }
+
+        private static async Task<string> GetDataFromURLHelper(string URL)
         {
             string Output = string.Empty;
 

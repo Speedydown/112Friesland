@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -92,6 +93,8 @@ namespace _112Friesland
             }
 
             LoadingBar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+            Task t = Task.Run(() => DataHandler.GetDataFromURL("http://speedydown-001-site2.smarterasp.net/api.ashx?Fryslan=" + URL));
         }
 
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
