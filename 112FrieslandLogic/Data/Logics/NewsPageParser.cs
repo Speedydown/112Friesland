@@ -79,8 +79,14 @@ namespace _112FrieslandLogic.Data
 
             if (StartIndexOFContent == -1)
             {
-                throw new Exception("No summary");
+                StartIndexOFContent = GetPositionOFStringInSource("<br />", Source);
+
+                if (StartIndexOFContent == -1)
+                {
+                    throw new Exception("No summary");
+                }
             }
+            
 
             int EndIndexOfContent = GetPositionOFStringInSource("<div class='swffile", Source, false);
 
