@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="_112Friesland.MainPage"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_112_Groningen"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:CLib="using:XamlControlLibrary"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/112FryslanDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="White" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Height="52" Background="DarkGray">
+                <TextBlock FontSize="25" FontWeight="Bold" Foreground="White" Text="112Fryslân" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <ScrollViewer VerticalScrollMode="Auto" Grid.Row="1">
+                <ListView x:ConnectionId='1'
+                    Margin="0,0,17,0"
+            Grid.Row="1"
+                    x:Name="NewsLV"                                    IsItemClickEnabled="True" SelectionMode="None" ItemTemplate="{StaticResource NieuwsOverzichtLayout}">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
+            </ScrollViewer>
+            <CLib:LoadingControl x:Name="LoadingControl" Grid.Row="1"  TextColor="Black" ErrorText="112Fryslân is op dit moment helaas niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Bezig met het ophalen van de laatste berichten."/>
+        </Grid>
+        <Grid Grid.Column="1" Background="White" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
+            <CLib:DisplayNewsItemControlWideScreen Grid.Row="0" x:Name="NewsItemControl"/>
+            <CLib:LoadingControl Grid.Row="0" x:Name="NewsItemLoadingControl" TextColor="#096898" ErrorText="HVZeeland is niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Een ogenblik geduld."/>
+            <!--<localControls:AdControl Grid.Row="1"/>-->
+        </Grid>
+    </Grid>
+</Page>
+
