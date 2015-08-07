@@ -1,6 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland\obj\release\intermediatexaml\112friesland.exe" HashGuid="f74a1c16-66c2-52ff-0405-12c004b26b4f" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\release\_112frieslandlogic.winmd" HashGuid="64c80a9c-fdb3-af46-9af7-68966b59b98e" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\wrchelperlibrary\bin\release\wrchelperlibrary.winmd" HashGuid="d8fc8261-d5fb-2a4d-5b64-921f882aed6e" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\release\_112frieslandlogic.winmd" HashGuid="cc1177a5-f917-251d-1802-5b76cc367baa" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

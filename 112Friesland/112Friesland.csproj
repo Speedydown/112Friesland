@@ -85,18 +85,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ArticleCounter.cs" />
-    <Compile Include="Common\NavigationHelper.cs" />
-    <Compile Include="Common\ObservableDictionary.cs" />
-    <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="ItemPage.xaml.cs">
       <DependentUpon>ItemPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NotificationHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -127,7 +121,6 @@
     <Content Include="Assets\WideLogo.scale-100.png" />
     <Content Include="Assets\WideLogo.scale-140.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
-    <Content Include="Common\ReadMe.txt" />
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -137,9 +130,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj">
+      <Project>{6f1a5ac4-c4ad-49c8-b37b-c541e09d5742}</Project>
+      <Name>WRCHelperLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj">
+      <Project>{09f3efe7-ac3c-4189-90f1-c7bf9e01af96}</Project>
+      <Name>XamlControlLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\112FrieslandLogic\112FrieslandLogic.csproj">
       <Project>{b01b83cb-cc6f-40d5-92eb-f596564c0284}</Project>
       <Name>112FrieslandLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_112FrieslandBackgroundWP\_112FrieslandBackgroundWP.csproj">
+      <Project>{7a18f3bd-cb4d-4ead-a671-bc1177d86616}</Project>
+      <Name>_112FrieslandBackgroundWP</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +157,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <Import Project="..\112Friesland.Shared\112Friesland.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

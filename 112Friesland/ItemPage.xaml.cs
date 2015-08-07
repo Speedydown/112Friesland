@@ -24,11 +24,10 @@ namespace _112Friesland
 {
     public sealed partial class ItemPage : Page
     {
+        private string CurrentURL = string.Empty;
         RelayCommand _checkedGoBackCommand;
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
-
-        private bool FullsizeImage = false;
 
         public ItemPage()
         {
@@ -53,14 +52,7 @@ namespace _112Friesland
 
         private void CheckGoBack()
         {
-            if (this.FullsizeImage)
-            {
-                this.FullsizeImage = false;
-                ContentScrollViewer.Visibility = Windows.UI.Xaml.Visibility.Visible;
-                FullImage.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                FullImageScrollViewer.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            }
-            else
+            if (NewsItemControl.CanGoBack())
             {
                 NavigationHelper.GoBack();
             }
@@ -78,23 +70,36 @@ namespace _112Friesland
 
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            ErrorGrid.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            string URL = (string)e.NavigationParameter;
-
             try
             {
-                NewsPage NP = await DataHandler.GetNewsPageFromURL(URL);
-                LayoutRoot.DataContext = NP;
-                ArticleCounter.AddArticleCount();
+                LoadingControl.SetLoadingStatus(true);
+
+                if (e.NavigationParameter != null)
+                {
+                    CurrentURL = (string)e.NavigationParameter;
+                    NewsPage NP = await DataHandler.GetNewsPageFromURL(CurrentURL);
+                    this.DataContext = NP;
+                }
+                else
+                {
+                    LoadingControl.DisplayLoadingError(true);
+                }
             }
-            catch (Exception)
+            catch
             {
-                ErrorGrid.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                LoadingControl.DisplayLoadingError(true);
+            }
+            finally
+            {
+                LoadingControl.SetLoadingStatus(false);
             }
 
-            LoadingBar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            ArticleCounter.AddArticleCount();
 
-            Task t = Task.Run(() => DataHandler.GetDataFromURL("http://speedydown-001-site2.smarterasp.net/api.ashx?Fryslan=" + URL));
+            if (e.NavigationParameter != null)
+            {
+                Task t = Task.Run(() => DataHandler.GetDataFromURL("http://speedydown-001-site2.smarterasp.net/api.ashx?Fryslan=" + (string)e.NavigationParameter));
+            }
         }
 
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
@@ -127,22 +132,5 @@ namespace _112Friesland
         }
 
         #endregion
-
-        private void ImagesListview_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            this.FullsizeImage = true;
-            ContentScrollViewer.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            FullImage.Source = new BitmapImage(new Uri(e.ClickedItem as string));
-            FullImageScrollViewer.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            FullImage.Visibility = Windows.UI.Xaml.Visibility.Visible;
-        }
-
-        private void FullImage_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.FullsizeImage = false;
-            ContentScrollViewer.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            FullImage.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            FullImageScrollViewer.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-        }
     }
 }

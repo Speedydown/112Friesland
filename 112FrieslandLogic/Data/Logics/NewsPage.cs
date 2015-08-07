@@ -4,10 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using WRCHelperLibrary;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Media;
+using Windows.UI;
 
 namespace _112FrieslandLogic.Data
 {
-    public sealed class NewsPage
+    public sealed class NewsPage : INewsItem
     {
         private static readonly string[] RemoveFilter = new string[] { "<br>", "<br />", "<br/>", "<BR>", "<p>", "<P>", "<em>", "</em>", "<strong>", "</strong>", "<u>", "</u>", "<b>", "</b>" };
 
@@ -25,11 +29,105 @@ namespace _112FrieslandLogic.Data
             }
         }
 
+        public string Added { get; private set; }
+        public string Updated { get; private set; }
+
+        public string TimeStamp
+        {
+            get
+            {
+                return string.Empty;
+            }
+        }
+
+        public Brush TitleColor
+        {
+            get { return new SolidColorBrush(Colors.Black); }
+        }
+
+        public Brush TitleColorWindows
+        {
+            get { return new SolidColorBrush(Colors.DarkGray); }
+        }
+
+        public Visibility MediaVisibilty
+        {
+            get
+            {
+                return MediaFile == null ? Visibility.Collapsed : Visibility.Visible;
+            }
+        }
+
+        public Visibility SummaryVisibilty
+        {
+            get { return Visibility.Visible; }
+        }
+
+        public Visibility TimeStampVisibilty
+        {
+            get
+            {
+                return Visibility.Collapsed;
+            }
+        }
+
+        private Thickness _ContentMargins = new Thickness(4, 15, 4, 5);
+        public Thickness ContentMargins
+        {
+            get
+            {
+                return _ContentMargins;
+            }
+        }
+
+        public Uri MediaFile { get; private set;}
+        private IList<string> _Body;
+        public IList<string> Body
+        {
+            get
+            {
+                if (_Body == null)
+                {
+                    _Body = new string[] { this.Content }.ToList();
+                }
+
+                return _Body;
+            }
+        }
+
+        public Uri YoutubeURL
+        {
+            get { return null; }
+        }
+
+        public Visibility DisplayWebView
+        {
+            get { return Visibility.Collapsed; }
+        }
+
         public NewsPage(string Title, string ContentSummary, string Content, IList<string> ImageList, string Author, string Date)
         {
             this.Title = WebUtility.HtmlDecode(Title);
             this.ContentSummary = this.CleanHTMLTags(ContentSummary);
+
+            Content = Content.Replace("<br />", "");
+
+            while (true)
+            {
+                string temp = Content.Substring(Content.Length - 1);
+
+                if (temp == "\n")
+                {
+                    Content = Content.Substring(0, Content.Length - 1);
+                }
+                else
+                {
+                    break;
+                }
+            }
+
             this.Content = this.CleanHTMLTags(Content);
+
             this.ImageList = ImageList;
             this.Author = Author;
             this.Date = Date;

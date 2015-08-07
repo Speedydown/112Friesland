@@ -1,4 +1,5 @@
 ﻿using _112Friesland.Common;
+using _112FrieslandBackgroundWP;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
 using System;
@@ -58,6 +59,8 @@ namespace _112Friesland
 
         public async void LoadData(bool OverrideTimer = false)
         {
+            LoadingControl.DisplayLoadingError(false);
+
             if (OverrideTimer)
             {
                 LastLoadedDT = DateTime.Now.AddHours(-1);
@@ -65,8 +68,7 @@ namespace _112Friesland
 
             TileUpdateManager.CreateTileUpdaterForApplication().Clear();
             BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
-            LoadingBar.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            ErrorGrid.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            LoadingControl.SetLoadingStatus(true);
 
             if (LastLoadedDT == null || NewsLinks == null || DateTime.Now.Subtract((DateTime)LastLoadedDT).TotalMinutes > 5)
             {
@@ -99,7 +101,7 @@ namespace _112Friesland
                 catch (Exception)
                 {
                     NewsLinks = null;
-                    ErrorGrid.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                    LoadingControl.DisplayLoadingError(true);
                 }
             }
             else
@@ -115,7 +117,7 @@ namespace _112Friesland
                 }
             }
 
-            LoadingBar.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            LoadingControl.SetLoadingStatus(false);
         }
 
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)

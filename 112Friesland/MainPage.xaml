@@ -5,63 +5,34 @@
     xmlns:local="using:_112Friesland"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:CLib="using:XamlControlLibrary"
     mc:Ignorable="d"
     Background="LightGray">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/112FryslanDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid>
-    <Grid x:Name="LayoutRoot">
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
+        <Grid x:Name="LayoutRoot">
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <Image Grid.Row="0" Source="/Assets/Banner.png" HorizontalAlignment="Stretch" />
-        <ProgressBar Grid.Row="1" Margin="0,2,0,0" IsIndeterminate="True" x:Name="LoadingBar" HorizontalAlignment="Stretch"/>
-            <Grid Grid.Row="2" x:Name="ContentRoot" Margin="0,5,0,0">
-                <ListView x:Name="ContentListview" ItemClick="ContentListview_ItemClick" IsItemClickEnabled="True">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,10" HorizontalAlignment="Stretch">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-
-                                <Grid Grid.Row="0" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" Height="100">
-                                    <Image Source="{Binding ImageURL}" Stretch="UniformToFill"  Height="225" Margin="0" VerticalAlignment="Center"/>
-                                </Grid>
-                                <Grid Background="Black" Grid.Row="1" Grid.ColumnSpan="4">
-                                    <TextBlock Text="{Binding Title}" Margin="2,0,2,0" Foreground="White" FontSize="25" TextWrapping="WrapWholeWords" />
-                                </Grid>
-                                <Grid Background="White" Grid.Row="2" Grid.ColumnSpan="4" HorizontalAlignment="Stretch">
-                                    <TextBlock Text="{Binding Content}" Margin="2,0,2,5" Foreground="Black" FontSize="16" TextWrapping="WrapWholeWords" />
-                                </Grid>
-                                <Grid Background="White" Grid.Row="3" HorizontalAlignment="Stretch">
-                                    <TextBlock Text="{Binding AuthorDate}" Margin="2,4,4,5" Foreground="Black" FontSize="13" TextWrapping="WrapWholeWords" HorizontalAlignment="Right" />
-                                </Grid>
-
-                            </Grid>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </Grid>
-        </Grid>
-        <Grid x:Name="ErrorGrid" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="112Fryslân is op dit moment helaas niet beschikbaar :(" TextWrapping="WrapWholeWords" Foreground="Black" FontSize="35" TextAlignment="Center" />
-            <TextBlock Grid.Row="1" Text="Probeer het later opnieuw" TextWrapping="WrapWholeWords" Foreground="Black" FontSize="15" TextAlignment="Center" Margin="0, 25" />
+
+            <Image Grid.Row="0" Source="/Assets/Banner.png" HorizontalAlignment="Stretch" />
+            <ListView x:Name="ContentListview" Grid.Row="1" Margin="0,5,0,0" ItemTemplate="{StaticResource NieuwsOverzichtLayout}" ItemClick="ContentListview_ItemClick" IsItemClickEnabled="True"/>
+            <CLib:LoadingControl x:Name="LoadingControl" Grid.Row="1"  TextColor="Black" ErrorText="112Fryslân is op dit moment helaas niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Bezig met het ophalen van de laatste berichten."/>
         </Grid>
     </Grid>
 

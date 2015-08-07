@@ -6,85 +6,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:CLib="using:XamlControlLibrary"
     Background="LightGray">
 
-    <Grid>
-        <ScrollViewer x:Name="ContentScrollViewer" VerticalScrollMode="Auto">
-
-            <Grid x:Name="LayoutRoot" Background="White" Margin="5">
-
-                <Grid.ChildrenTransitions>
-                    <TransitionCollection>
-                        <EntranceThemeTransition/>
-                    </TransitionCollection>
-                </Grid.ChildrenTransitions>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-
-                <Grid Grid.Row="0">
-                    <ProgressBar Grid.Row="1" Margin="0,2,0,0" IsIndeterminate="True" x:Name="LoadingBar" HorizontalAlignment="Stretch"/>
-                    <TextBlock Text="{Binding Title}" Margin="4,0" Foreground="Black" FontSize="35" FontWeight="Bold" TextWrapping="WrapWholeWords" />
-                </Grid>
-                <Grid  Grid.Row="1" Margin="4,15,4,5">
-                    <TextBlock Text="{Binding ContentSummary}" Foreground="Black" FontSize="20" FontWeight="Bold" TextWrapping="WrapWholeWords" />
-                </Grid>
-                <Grid  Grid.Row="2" Margin="4,15,4,5">
-                    <TextBlock Text="{Binding Content}" Foreground="Black" FontSize="20" TextWrapping="WrapWholeWords" />
-                </Grid>
-                <Grid  Grid.Row="3" Margin="4,5,4,25">
-                    <TextBlock HorizontalAlignment="Right" Text="{Binding AuthorDate}" Foreground="Black" FontSize="16" TextWrapping="WrapWholeWords" />
-                </Grid>
-                <ListView x:ConnectionId='2'
-                x:Name="ImagesListview"
-                Grid.Row="4"
-                                    Margin="4,0"
-                                    ItemsSource="{Binding ImageList}"
-                    IsItemClickEnabled="True"
-                                                        
-                    ContinuumNavigationTransitionInfo.ExitElementContainer="True">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top">
-                                <Image Source="{Binding}" />
-                            </Border>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                            <Setter Property="BorderThickness" Value="0"/>
-                            <Setter Property="Margin" Value="0,10,0,0"/>
-                            <Setter Property="Padding" Value="0"/>
-                        </Style>
-                    </ListView.ItemContainerStyle>
-                </ListView>
-            </Grid>
-
-        </ScrollViewer>
-        <ScrollViewer x:Name="FullImageScrollViewer" Grid.Row="1" Visibility="Collapsed"
-                  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" 
-                  ZoomMode="Enabled">
-
-            <Image x:ConnectionId='1' x:Name="FullImage"                          >
-
-            </Image>
-        </ScrollViewer>
-        <Grid x:Name="ErrorGrid" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="112Fryslân is op dit moment helaas niet beschikbaar :(" TextWrapping="WrapWholeWords" Foreground="Black" FontSize="35" TextAlignment="Center" />
-            <TextBlock Grid.Row="1" Text="Probeer het later opnieuw" TextWrapping="WrapWholeWords" Foreground="Black" FontSize="15" TextAlignment="Center" Margin="0, 25" />
-        </Grid>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <CLib:DisplayNewsItemControl Grid.Row="0" x:Name="NewsItemControl"/>
+        <CLib:LoadingControl Grid.Row="0" x:Name="LoadingControl" TextColor="Black" ErrorText="112Groningen is niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Een ogenblik geduld."/>
     </Grid>
 </Page>
 
