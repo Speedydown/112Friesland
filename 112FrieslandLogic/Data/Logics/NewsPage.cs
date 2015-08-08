@@ -8,6 +8,7 @@ using WRCHelperLibrary;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI;
+using WebCrawlerTools;
 
 namespace _112FrieslandLogic.Data
 {
@@ -110,7 +111,7 @@ namespace _112FrieslandLogic.Data
             this.Title = WebUtility.HtmlDecode(Title);
             this.ContentSummary = this.CleanHTMLTags(ContentSummary);
 
-            Content = Content.Replace("<br />", "");
+            Content =  Content.Replace("<br />", "");
 
             while (true)
             {
@@ -126,7 +127,7 @@ namespace _112FrieslandLogic.Data
                 }
             }
 
-            this.Content = this.CleanHTMLTags(Content);
+            this.Content = HTMLParserUtil.CleanHTMLTagsFromString(this.CleanHTMLTags(Content));
 
             this.ImageList = ImageList;
             this.Author = Author;
