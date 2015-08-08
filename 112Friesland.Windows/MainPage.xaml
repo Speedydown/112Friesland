@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:CLib="using:XamlControlLibrary"
+    xmlns:localControls="using:_112Friesland.Controls"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -54,8 +55,8 @@
                 </TransitionCollection>
             </Grid.ChildrenTransitions>
             <CLib:DisplayNewsItemControlWideScreen Grid.Row="0" x:Name="NewsItemControl"/>
-            <CLib:LoadingControl Grid.Row="0" x:Name="NewsItemLoadingControl" TextColor="#096898" ErrorText="HVZeeland is niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Een ogenblik geduld."/>
-            <!--<localControls:AdControl Grid.Row="1"/>-->
+            <CLib:LoadingControl Grid.Row="0" x:Name="NewsItemLoadingControl" TextColor="Black" ErrorText="HVZeeland is niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Een ogenblik geduld."/>
+            <localControls:AdControl Grid.Row="1"/>
         </Grid>
     </Grid>
 </Page>

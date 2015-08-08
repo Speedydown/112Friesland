@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-cy"
+"ResourceDimensions"		"language-cy"
+
+[Files]
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\split.language-cy.pri"			"resources.pri"

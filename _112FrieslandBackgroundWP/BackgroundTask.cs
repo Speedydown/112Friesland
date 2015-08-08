@@ -17,53 +17,15 @@ namespace _112FrieslandBackgroundWP
         public async void Run(IBackgroundTaskInstance taskInstance)
         {
             BackgroundTaskDeferral deferral = taskInstance.GetDeferral();
-            await GenerateNotifications();
+
+            IList<NewsLink> Content = await NotificationDataHandler.GenerateNotifications();
+
+            if (Content.Count > 0)
+            {
+                CreateTile(Content, Content.Count);
+            }
+
             deferral.Complete();
-        }
-
-        private async Task GenerateNotifications()
-        {
-            try
-            {
-                ApplicationData applicationData = ApplicationData.Current;
-                ApplicationDataContainer localSettings = applicationData.LocalSettings;
-                IList<NewsLink> News = await DataHandler.GetNewsLinksByPage(1);
-                IList<NewsLink> NewsLink = new List<NewsLink>();
-
-                string LastURL = string.Empty;
-
-                if (localSettings.Values["LastNewsItem"] != null)
-                {
-                    LastURL = localSettings.Values["LastNewsItem"].ToString();
-                }
-                else
-                {
-                    return;
-                }
-
-                int NotificationCounter = 0;
-
-                foreach (NewsLink nl in News)
-                {
-                    if (nl.URL == LastURL)
-                    {
-                        if (NotificationCounter > 0)
-                        {
-                            CreateTile(NewsLink, NotificationCounter);
-                        }
-
-                        return;
-                    }
-
-                    NewsLink.Add(nl);
-                    NotificationCounter++;
-                }
-
-            }
-            catch (Exception)
-            {
-
-            }
         }
 
         private void CreateTile(IList<NewsLink> Content, int Counter)

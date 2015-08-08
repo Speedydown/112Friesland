@@ -15,7 +15,7 @@ namespace _112FrieslandBackgroundWP
             await BackgroundExecutionManager.RequestAccessAsync();
 
             string entryPoint = "_112FrieslandBackgroundWP.BackgroundTask";
-            string taskName = "112FryslânTileService";
+            string taskName = "_112FryslânBackGroundWorker";
             SystemCondition userCondition = new SystemCondition(SystemConditionType.InternetAvailable);
 
             BackgroundTaskRegistration task = RegisterBackgroundTask(entryPoint, taskName, hourlyTrigger, userCondition);

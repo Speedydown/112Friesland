@@ -1,6 +1,13 @@
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\_112FrieslandLogic.winmd
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\_112FrieslandLogic.pdb
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\_112FrieslandLogic.pri
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.dll
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WRCHelperLibrary.winmd
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.pdb
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.pri
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WRCHelperLibrary.pdb
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WRCHelperLibrary.pri
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\112FrieslandLogic.csprojResolveAssemblyReference.cache
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\_112FrieslandLogic.winmd
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\_112FrieslandLogic.pdb
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\_112FrieslandLogic.winmdobj
@@ -16,10 +23,3 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\pri.res
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\qualifiers.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.dll
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WRCHelperLibrary.winmd
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.pdb
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.pri
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WRCHelperLibrary.pdb
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WRCHelperLibrary.pri
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\112FrieslandLogic.csprojResolveAssemblyReference.cache

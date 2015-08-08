@@ -10,6 +10,8 @@ namespace _112FrieslandLogic
 {
     public static class DataHandler
     {
+        private static readonly Random Randomizer = new Random();
+
         public static IAsyncOperation<IList<NewsLink>> GetNewsLinksByPage(int PageNumber)
         {
             return GetNewsLinksByPageHelper(PageNumber).AsAsyncOperation();
@@ -17,7 +19,7 @@ namespace _112FrieslandLogic
 
         private static async Task<IList<NewsLink>> GetNewsLinksByPageHelper(int PageNumber)
         {
-            string PageSource = await GetDataFromURL("http://www.112fryslan.nl/Home?&action=show&startat=" + ((PageNumber - 1) * 10));
+            string PageSource = await GetDataFromURL("http://www.112fryslan.nl/Home?&action=show&startat=" + ((PageNumber - 1) * 10) + "&random=" + Randomizer.Next(0, 2000000));
 
             return NewsLinkParser.GetNewsLinksFromSource(PageSource);
         }

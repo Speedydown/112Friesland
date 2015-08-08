@@ -121,7 +121,7 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Shared\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Debug\Styles\112FryslanDictionary.xbf">

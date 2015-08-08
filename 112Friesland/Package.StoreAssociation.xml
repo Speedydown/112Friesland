@@ -192,30 +192,30 @@
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>52891Speedydown.112Groningen</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.BekendeNederlanders</MainPackageIdentityName>
+    <MainPackageIdentityName>52891Speedydown.HVZeeland</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.Joop</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.LeeuwarderCourant</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.leftovers</MainPackageIdentityName>
+    <MainPackageIdentityName>52891Speedydown.Pownews</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.Supermarktaanbiedingen</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.Wldnet</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.WieZitWaarVandaag</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://dev.windowsphone.com/AppSubmission/AssociationLanding?windowsProductId=2c858c0a-fb84-47eb-9679-e2660a76d600">
-    <BundleInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.0.3</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture></PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.0.3</PackageMaxArchitectureVersion>
-      </PackageInfo>
-      <PackageInfo>
-        <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture></PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.0.3</PackageMaxArchitectureVersion>
-      </PackageInfo>
-    </BundleInfo>
+  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGGZNN4K">
+    <PackageInfo>
+      <OsMinVersion>6.3.0.0</OsMinVersion>
+      <PackageArchitecture>Unknown</PackageArchitecture>
+      <PackageMaxArchitectureVersion>2015.412.1938.2161</PackageMaxArchitectureVersion>
+    </PackageInfo>
+    <PackageInfo>
+      <OsMinVersion>6.3.0.0</OsMinVersion>
+      <PackageArchitecture>Unknown</PackageArchitecture>
+      <PackageMaxArchitectureVersion>2015.412.1938.2161</PackageMaxArchitectureVersion>
+    </PackageInfo>
+    <PackageInfo>
+      <OsMinVersion>6.3.0.0</OsMinVersion>
+      <PackageArchitecture>Neutral</PackageArchitecture>
+      <PackageMaxArchitectureVersion>2015.412.1938.2161</PackageMaxArchitectureVersion>
+    </PackageInfo>
   </PackageInfoList>
 </StoreAssociation>

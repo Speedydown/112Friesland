@@ -22,8 +22,14 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\bin\Release\WRCHelperLibrary.winmd">
       <PackagePath>WRCHelperLibrary.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Release\_112FrieslandBackgroundWP.winmd">
+      <PackagePath>_112FrieslandBackgroundWP.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Release\_112FrieslandLogic.winmd">
       <PackagePath>_112FrieslandLogic.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\XamlControlLibrary.dll">
+      <PackagePath>XamlControlLibrary.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Release\WebCrawlerTools.dll">
       <PackagePath>WebCrawlerTools.dll</PackagePath>
@@ -115,8 +121,11 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Shared\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\Styles\112FryslanDictionary.xbf">
+      <PackagePath>Styles\112FryslanDictionary.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -127,8 +136,20 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\DisplayNewsItemControlWideScreen.xbf">
+      <PackagePath>XamlControlLibrary\DisplayNewsItemControlWideScreen.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\DisplayNewsItemControl.xbf">
+      <PackagePath>XamlControlLibrary\DisplayNewsItemControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\LoadingControl.xbf">
+      <PackagePath>XamlControlLibrary\LoadingControl.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland.xr.xml">
       <PackagePath>112Friesland.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\XamlControlLibrary.xr.xml">
+      <PackagePath>XamlControlLibrary\XamlControlLibrary.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>

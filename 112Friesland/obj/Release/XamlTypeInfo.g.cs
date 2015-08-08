@@ -59,6 +59,18 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
+            var userXamlType = xamlType as global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType;
+            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+            {
+                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
+                if (libXamlType != null)
+                {
+                    if(libXamlType.IsConstructible || xamlType == null)
+                    {
+                        xamlType = libXamlType;
+                    }
+                }
+            }
             if (xamlType != null)
             {
                 _xamlTypeCacheByName.Add(xamlType.FullName, xamlType);
@@ -82,6 +94,18 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             if(typeIndex != -1)
             {
                 xamlType = CreateXamlType(typeIndex);
+            }
+            var userXamlType = xamlType as global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType;
+            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+            {
+                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
+                if (libXamlType != null)
+                {
+                    if(libXamlType.IsConstructible || xamlType == null)
+                    {
+                        xamlType = libXamlType;
+                    }
+                }
             }
             if (xamlType != null)
             {
@@ -124,27 +148,35 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "_112Friesland.ItemPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "_112Friesland.Common.NavigationHelper";
-            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[5] = "_112Friesland.Common.ObservableDictionary";
-            _typeNameTable[6] = "Object";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "_112Friesland.MainPage";
+            _typeNameTable = new string[13];
+            _typeNameTable[0] = "XamlControlLibrary.DisplayNewsItemControl";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "XamlControlLibrary.LoadingControl";
+            _typeNameTable[3] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[4] = "String";
+            _typeNameTable[5] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[6] = "_112Friesland.ItemPage";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[8] = "_112Friesland.Common.NavigationHelper";
+            _typeNameTable[9] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[10] = "_112Friesland.Common.ObservableDictionary";
+            _typeNameTable[11] = "Object";
+            _typeNameTable[12] = "_112Friesland.MainPage";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::_112Friesland.ItemPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::_112Friesland.Common.NavigationHelper);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[5] = typeof(global::_112Friesland.Common.ObservableDictionary);
-            _typeTable[6] = typeof(global::System.Object);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::_112Friesland.MainPage);
+            _typeTable = new global::System.Type[13];
+            _typeTable[0] = typeof(global::XamlControlLibrary.DisplayNewsItemControl);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::XamlControlLibrary.LoadingControl);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[4] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[6] = typeof(global::_112Friesland.ItemPage);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[8] = typeof(global::_112Friesland.Common.NavigationHelper);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[10] = typeof(global::_112Friesland.Common.ObservableDictionary);
+            _typeTable[11] = typeof(global::System.Object);
+            _typeTable[12] = typeof(global::_112Friesland.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,10 +211,12 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ItemPage() { return new global::_112Friesland.ItemPage(); }
-        private object Activate_5_ObservableDictionary() { return new global::_112Friesland.Common.ObservableDictionary(); }
-        private object Activate_8_MainPage() { return new global::_112Friesland.MainPage(); }
-        private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
+        private object Activate_0_DisplayNewsItemControl() { return new global::XamlControlLibrary.DisplayNewsItemControl(); }
+        private object Activate_2_LoadingControl() { return new global::XamlControlLibrary.LoadingControl(); }
+        private object Activate_6_ItemPage() { return new global::_112Friesland.ItemPage(); }
+        private object Activate_10_ObservableDictionary() { return new global::_112Friesland.Common.ObservableDictionary(); }
+        private object Activate_12_MainPage() { return new global::_112Friesland.MainPage(); }
+        private void MapAdd_10_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -200,53 +234,79 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  _112Friesland.ItemPage
+            case 0:   //  XamlControlLibrary.DisplayNewsItemControl
+                userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_DisplayNewsItemControl;
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  XamlControlLibrary.LoadingControl
+                userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_2_LoadingControl;
+                userType.AddMemberName("TextColor");
+                userType.AddMemberName("ErrorText");
+                userType.AddMemberName("ErrorSubText");
+                userType.AddMemberName("LoadingText");
+                userType.AddMemberName("ControlVisibility");
+                userType.AddMemberName("ErrorTextVisibility");
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Media.Brush
+                xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  String
+                xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Windows.UI.Xaml.Visibility
+                xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  _112Friesland.ItemPage
                 userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_ItemPage;
+                userType.Activator = Activate_6_ItemPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 7:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  _112Friesland.Common.NavigationHelper
+            case 8:   //  _112Friesland.Common.NavigationHelper
                 userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Windows.UI.Xaml.DependencyObject
+            case 9:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  _112Friesland.Common.ObservableDictionary
+            case 10:   //  _112Friesland.Common.ObservableDictionary
                 userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_5_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_10_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Object
+            case 11:   //  Object
                 xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  String
-                xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  _112Friesland.MainPage
+            case 12:   //  _112Friesland.MainPage
                 userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_12_MainPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -256,23 +316,136 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             return xamlType;
         }
 
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> _otherProviders;
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> OtherProviders
+        {
+            get
+            {
+                if(_otherProviders == null)
+                {
+                    _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
+                    global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
+                    provider = new global::XamlControlLibrary.XamlControlLibrary_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                }
+                return _otherProviders;
+            }
+        }
 
-        private object get_0_ItemPage_NavigationHelper(object instance)
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForName(string typeName)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(typeName);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForType(global::System.Type type)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(type);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private object get_0_LoadingControl_TextColor(object instance)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            return that.TextColor;
+        }
+        private void set_0_LoadingControl_TextColor(object instance, object Value)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            that.TextColor = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_1_LoadingControl_ErrorText(object instance)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            return that.ErrorText;
+        }
+        private void set_1_LoadingControl_ErrorText(object instance, object Value)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            that.ErrorText = (global::System.String)Value;
+        }
+        private object get_2_LoadingControl_ErrorSubText(object instance)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            return that.ErrorSubText;
+        }
+        private void set_2_LoadingControl_ErrorSubText(object instance, object Value)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            that.ErrorSubText = (global::System.String)Value;
+        }
+        private object get_3_LoadingControl_LoadingText(object instance)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            return that.LoadingText;
+        }
+        private void set_3_LoadingControl_LoadingText(object instance, object Value)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            that.LoadingText = (global::System.String)Value;
+        }
+        private object get_4_LoadingControl_ControlVisibility(object instance)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            return that.ControlVisibility;
+        }
+        private void set_4_LoadingControl_ControlVisibility(object instance, object Value)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            that.ControlVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_5_LoadingControl_ErrorTextVisibility(object instance)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            return that.ErrorTextVisibility;
+        }
+        private void set_5_LoadingControl_ErrorTextVisibility(object instance, object Value)
+        {
+            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            that.ErrorTextVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_6_ItemPage_NavigationHelper(object instance)
         {
             var that = (global::_112Friesland.ItemPage)instance;
             return that.NavigationHelper;
         }
-        private object get_1_ItemPage_DefaultViewModel(object instance)
+        private object get_7_ItemPage_DefaultViewModel(object instance)
         {
             var that = (global::_112Friesland.ItemPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_2_MainPage_NavigationHelper(object instance)
+        private object get_8_MainPage_NavigationHelper(object instance)
         {
             var that = (global::_112Friesland.MainPage)instance;
             return that.NavigationHelper;
         }
-        private object get_3_MainPage_DefaultViewModel(object instance)
+        private object get_9_MainPage_DefaultViewModel(object instance)
         {
             var that = (global::_112Friesland.MainPage)instance;
             return that.DefaultViewModel;
@@ -285,28 +458,69 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "XamlControlLibrary.LoadingControl.TextColor":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+                xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "TextColor", "Windows.UI.Xaml.Media.Brush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_LoadingControl_TextColor;
+                xamlMember.Setter = set_0_LoadingControl_TextColor;
+                break;
+            case "XamlControlLibrary.LoadingControl.ErrorText":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+                xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ErrorText", "String");
+                xamlMember.Getter = get_1_LoadingControl_ErrorText;
+                xamlMember.Setter = set_1_LoadingControl_ErrorText;
+                break;
+            case "XamlControlLibrary.LoadingControl.ErrorSubText":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+                xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ErrorSubText", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_LoadingControl_ErrorSubText;
+                xamlMember.Setter = set_2_LoadingControl_ErrorSubText;
+                break;
+            case "XamlControlLibrary.LoadingControl.LoadingText":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+                xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "LoadingText", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_LoadingControl_LoadingText;
+                xamlMember.Setter = set_3_LoadingControl_LoadingText;
+                break;
+            case "XamlControlLibrary.LoadingControl.ControlVisibility":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+                xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ControlVisibility", "Windows.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_LoadingControl_ControlVisibility;
+                xamlMember.Setter = set_4_LoadingControl_ControlVisibility;
+                break;
+            case "XamlControlLibrary.LoadingControl.ErrorTextVisibility":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+                xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ErrorTextVisibility", "Windows.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_LoadingControl_ErrorTextVisibility;
+                xamlMember.Setter = set_5_LoadingControl_ErrorTextVisibility;
+                break;
             case "_112Friesland.ItemPage.NavigationHelper":
                 userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("_112Friesland.ItemPage");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "NavigationHelper", "_112Friesland.Common.NavigationHelper");
-                xamlMember.Getter = get_0_ItemPage_NavigationHelper;
+                xamlMember.Getter = get_6_ItemPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "_112Friesland.ItemPage.DefaultViewModel":
                 userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("_112Friesland.ItemPage");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "_112Friesland.Common.ObservableDictionary");
-                xamlMember.Getter = get_1_ItemPage_DefaultViewModel;
+                xamlMember.Getter = get_7_ItemPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "_112Friesland.MainPage.NavigationHelper":
                 userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("_112Friesland.MainPage");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "NavigationHelper", "_112Friesland.Common.NavigationHelper");
-                xamlMember.Getter = get_2_MainPage_NavigationHelper;
+                xamlMember.Getter = get_8_MainPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "_112Friesland.MainPage.DefaultViewModel":
                 userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("_112Friesland.MainPage");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "_112Friesland.Common.ObservableDictionary");
-                xamlMember.Getter = get_3_MainPage_DefaultViewModel;
+                xamlMember.Getter = get_9_MainPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -634,5 +848,7 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
         }
     }
 }
+
+
 
 

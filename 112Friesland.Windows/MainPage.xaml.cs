@@ -1,4 +1,5 @@
 ﻿using _112Friesland.Common;
+using _112FrieslandBackgroundW;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
 using System;
@@ -147,7 +148,7 @@ namespace _112Friesland
             try
             {
                 localSettings.Values["LastNewsItem"] = newsLinks.First().URL;
-               // NotificationHandler.Run();
+                NotificationHandler.Run();
             }
             catch
             {
