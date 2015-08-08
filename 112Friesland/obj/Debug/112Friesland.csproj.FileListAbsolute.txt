@@ -41,7 +41,6 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\ItemPage.xbf
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\MainPage.xbf
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\XamlSaveStateFile.xml
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\Styles\112FryslanDictionary.xaml
-C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\Styles\112FryslanDictionary.xbf
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\112Friesland.exe
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\112Friesland.pdb
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\112Friesland.csproj.GenerateResource.Cache

@@ -20,6 +20,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WRCHelperLibrary;
 
 namespace _112Friesland
 {
@@ -148,7 +149,7 @@ namespace _112Friesland
             try
             {
                 localSettings.Values["LastNewsItem"] = newsLinks.First().URL;
-                NotificationHandler.Run();
+                NotificationHandler.Run("_112FrieslandBackgroundW.BackgroundTask", "_112FryslânBackGroundWorker");
             }
             catch
             {

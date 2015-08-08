@@ -21,6 +21,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WRCHelperLibrary;
 
 namespace _112Friesland
 {
@@ -81,7 +82,7 @@ namespace _112Friesland
 
                     if (LastLoadedDT == null)
                     {
-                        NotificationHandler.Run();
+                        NotificationHandler.Run("_112FrieslandBackgroundWP.BackgroundTask", "_112FryslânBackGroundWorker");
                     }
 
                     ApplicationData applicationData = ApplicationData.Current;
