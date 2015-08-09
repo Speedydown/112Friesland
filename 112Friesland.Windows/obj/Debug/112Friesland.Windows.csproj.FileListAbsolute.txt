@@ -65,3 +65,4 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\priv
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\privacyPolicy.g.cs
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\privacyPolicy.xaml
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\privacyPolicy.xbf
+C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\Styles\112FryslanDictionary.xbf
