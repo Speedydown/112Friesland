@@ -8,7 +8,7 @@ using WRCHelperLibrary;
 
 namespace _112FrieslandLogic.Data
 {
-    public sealed class NewsLink
+    public sealed class NewsLink : INewsLink
     {
         public string URL { get; private set; }
         public string ImageURL { get; private set; }
@@ -22,6 +22,16 @@ namespace _112FrieslandLogic.Data
             {
                 return this.ToString();
             }
+        }
+
+        public string CommentCount
+        {
+            get { return string.Empty; }
+        }
+
+        public string Time
+        {
+            get { return Date; }
         }
 
         public NewsLink(string URL, string ImageURL, string Title, string Content, string Author, string Date)
@@ -38,5 +48,8 @@ namespace _112FrieslandLogic.Data
         {
             return this.Author + " op " + this.Date;
         }
+
+
+       
     }
 }

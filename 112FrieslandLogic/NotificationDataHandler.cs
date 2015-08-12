@@ -39,7 +39,7 @@ namespace _112FrieslandLogic
 
 #if DEBUG
                 //Test data
-               // LastURL = News[3].URL;
+                //LastURL = News[3].URL;
 #endif
                 int NotificationCounter = 0;
 

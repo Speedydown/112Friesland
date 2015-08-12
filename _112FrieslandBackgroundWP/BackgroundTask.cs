@@ -9,6 +9,7 @@ using _112FrieslandLogic.Data;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 using _112FrieslandLogic;
+using WRCHelperLibrary;
 
 namespace _112FrieslandBackgroundWP
 {
@@ -22,101 +23,20 @@ namespace _112FrieslandBackgroundWP
 
             if (Content.Count > 0)
             {
-                CreateTile(Content, Content.Count);
+                CreateTiles(Content.Cast<INewsLink>().ToList(), Content.Count);
+                BadgeHandler.CreateBadge(Content.Count());
             }
 
             deferral.Complete();
         }
 
-        private void CreateTile(IList<NewsLink> Content, int Counter)
+        private void CreateTiles(IList<INewsLink> Content, int Counter)
         {
-            //LargeTile
-            XmlDocument RectangleTile = CreateRectangleTile(Content, Counter);
-            XmlDocument SquareTile = CreateSquareTile();
-            XmlDocument SmallTile = CreateSmallTile();
+            XmlDocument RectangleTile = TileXmlHandler.CreateRectangleTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150IconWithBadgeAndText), Content, Counter, "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân.nl");
+            XmlDocument SquareTile = TileXmlHandler.CreateSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150IconWithBadge), Content, "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân");
+            XmlDocument SmallTile = TileXmlHandler.CreateSmallSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare71x71IconWithBadge), "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân");
 
-
-            //Badges
-            XmlDocument badgeXml = BadgeUpdateManager.GetTemplateContent(BadgeTemplateType.BadgeGlyph);
-            XmlElement badgeElement = (XmlElement)badgeXml.SelectSingleNode("/badge");
-            badgeElement.SetAttribute("value", Counter.ToString());
-
-            BadgeNotification badge = new BadgeNotification(badgeXml);
-            BadgeUpdateManager.CreateBadgeUpdaterForApplication().Update(badge);
-
-
-            //Add tiles together
-            IXmlNode node = RectangleTile.ImportNode(SquareTile.GetElementsByTagName("binding").Item(0), true);
-            RectangleTile.GetElementsByTagName("visual").Item(0).AppendChild(node);
-
-            node = RectangleTile.ImportNode(SmallTile.GetElementsByTagName("binding").Item(0), true);
-            RectangleTile.GetElementsByTagName("visual").Item(0).AppendChild(node);
-
-            TileNotification tileNotification = new TileNotification(RectangleTile);
-
-            TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
-        }
-
-        private XmlDocument CreateRectangleTile(IList<NewsLink> Content, int Counter)
-        {
-            XmlDocument tileXml = TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150IconWithBadgeAndText);
-            XmlNodeList tileTextAttributes = tileXml.GetElementsByTagName("text");
-
-            try
-            {
-                tileTextAttributes[0].InnerText = "Laatste nieuws:";
-            }
-            catch
-            {
-
-            }
-
-            try
-            {
-                tileTextAttributes[1].InnerText = Content[0].Title;
-            }
-            catch
-            {
-
-            }
-
-            try
-            {
-                tileTextAttributes[2].InnerText = Content[1].Title;
-            }
-            catch
-            {
-
-            }
-
-            XmlNodeList tileImageAttributes = tileXml.GetElementsByTagName("image");
-
-            ((XmlElement)tileImageAttributes[0]).SetAttribute("src", "ms-appx:///assets/BadgeLogo.scale-240.png");
-            ((XmlElement)tileImageAttributes[0]).SetAttribute("alt", "Wâldnet.nl");
-
-            return tileXml;
-        }
-
-        private XmlDocument CreateSquareTile()
-        {
-            XmlDocument squareTileXml = TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare71x71IconWithBadge);
-            XmlNodeList tileImageAttributes = squareTileXml.GetElementsByTagName("image");
-
-            ((XmlElement)tileImageAttributes[0]).SetAttribute("src", "ms-appx:///assets/BadgeLogo.scale-240.png");
-            ((XmlElement)tileImageAttributes[0]).SetAttribute("alt", "Wâldnet.nl");
-
-            return squareTileXml;
-        }
-
-        private XmlDocument CreateSmallTile()
-        {
-            XmlDocument SmallTIle = TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150IconWithBadge);
-            XmlNodeList tileImageAttributes = SmallTIle.GetElementsByTagName("image");
-
-            ((XmlElement)tileImageAttributes[0]).SetAttribute("src", "ms-appx:///assets/BadgeLogo.scale-240.png");
-            ((XmlElement)tileImageAttributes[0]).SetAttribute("alt", "Wâldnet.nl");
-
-            return SmallTIle;
+            TileXmlHandler.CreateTileUpdate(new XmlDocument[] { RectangleTile, SquareTile, SmallTile });
         }
     }
 }
