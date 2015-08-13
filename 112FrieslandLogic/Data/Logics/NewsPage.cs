@@ -20,16 +20,15 @@ namespace _112FrieslandLogic.Data
         public string ContentSummary { get; private set; }
         public string Content { get; private set; }
         public IList<string> ImageList { get; private set; }
-        public string Author { get; private set; }
-        public string Date { get; private set; }
-        public string AuthorDate
+        public string RealAuthor { get; private set; }
+        public string Author
         {
             get
             {
-                return this.Author + " op " + this.Date;
+                return this.RealAuthor + " op " + this.Date;
             }
         }
-
+        public string Date { get; private set; }
         public string Added { get; private set; }
         public string Updated { get; private set; }
 
@@ -130,7 +129,7 @@ namespace _112FrieslandLogic.Data
             this.Content = HTMLParserUtil.CleanHTMLTagsFromString(this.CleanHTMLTags(Content));
 
             this.ImageList = ImageList;
-            this.Author = Author;
+            this.RealAuthor = Author;
             this.Date = Date;
         }
 

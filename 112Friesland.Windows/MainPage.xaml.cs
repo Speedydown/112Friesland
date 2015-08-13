@@ -12,6 +12,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.System;
+using Windows.UI.Core;
 using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -192,14 +193,24 @@ namespace _112Friesland
         {
             while (!StopRefresh)
             {
-                await Task.Delay(300000);
+                await Task.Delay(150000);
 
                 IList<NewsLink> NewsLinks = await GetNewsLinksOperationAsTask();
 
-                if ((NewsLinks.Count > 0 && NewsLinks.First().URL != newsLinks.First().URL) || newsLinks.Count == 0)
+                try
                 {
-                    newsLinks = NewsLinks;
-                    NewsLV.ItemsSource = newsLinks;
+                    Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
+                    {
+                        if ((NewsLinks.Count > 0 && NewsLinks.First().URL != newsLinks.First().URL) || newsLinks.Count == 0)
+                        {
+                            newsLinks = NewsLinks;
+                            NewsLV.ItemsSource = newsLinks;
+                        }
+                    });
+                }
+                catch
+                {
+
                 }
             }
         }

@@ -12,6 +12,7 @@ using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
 using Windows.Storage;
 using Windows.System;
+using Windows.UI;
 using Windows.UI.Notifications;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -37,7 +38,7 @@ namespace _112Friesland
         {
             Instance = this;
             this.InitializeComponent();
-
+            StatusBar.GetForCurrentView().ForegroundColor = Colors.Black;
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
