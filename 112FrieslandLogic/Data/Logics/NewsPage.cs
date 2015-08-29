@@ -14,11 +14,9 @@ namespace _112FrieslandLogic.Data
 {
     public sealed class NewsPage : INewsItem
     {
-        private static readonly string[] RemoveFilter = new string[] { "<br>", "<br />", "<br/>", "<BR>", "<p>", "<P>", "<em>", "</em>", "<strong>", "</strong>", "<u>", "</u>", "<b>", "</b>" };
-
         public string Title { get; private set; }
         public string ContentSummary { get; private set; }
-        public string Content { get; private set; }
+        public IList<string> Body { get; private set; }
         public IList<string> ImageList { get; private set; }
         public string RealAuthor { get; private set; }
         public string Author
@@ -60,7 +58,7 @@ namespace _112FrieslandLogic.Data
 
         public Visibility SummaryVisibilty
         {
-            get { return Visibility.Visible; }
+            get { return ContentSummary.Length > 0 ? Visibility.Visible : Visibility.Collapsed; }
         }
 
         public Visibility TimeStampVisibilty
@@ -81,19 +79,6 @@ namespace _112FrieslandLogic.Data
         }
 
         public Uri MediaFile { get; private set;}
-        private IList<string> _Body;
-        public IList<string> Body
-        {
-            get
-            {
-                if (_Body == null)
-                {
-                    _Body = new string[] { this.Content }.ToList();
-                }
-
-                return _Body;
-            }
-        }
 
         public Uri YoutubeURL
         {
@@ -105,45 +90,42 @@ namespace _112FrieslandLogic.Data
             get { return Visibility.Collapsed; }
         }
 
-        public NewsPage(string Title, string ContentSummary, string Content, IList<string> ImageList, string Author, string Date)
+        public NewsPage(string Title, string ContentSummary, IList<string> Content, IList<string> ImageList, string Author, string Date)
         {
             this.Title = WebUtility.HtmlDecode(Title);
-            this.ContentSummary = this.CleanHTMLTags(ContentSummary);
 
-            Content =  Content.Replace("<br />", "");
-
-            while (true)
+            if (ContentSummary.Length > 0 && Content.Count == 0)
             {
-                string temp = Content.Substring(Content.Length - 1);
-
-                if (temp == "\n")
-                {
-                    Content = Content.Substring(0, Content.Length - 1);
-                }
-                else
-                {
-                    break;
-                }
+                Content.Add(ContentSummary);
+                ContentSummary = string.Empty;
             }
 
-            this.Content = HTMLParserUtil.CleanHTMLTagsFromString(this.CleanHTMLTags(Content));
+            this.Body = Content;
+            this.ContentSummary = ContentSummary;
+
+            for (int i = 0; i < this.Body.Count; i++)
+            {
+                if (Body[i].Contains("&#x2013;"))
+                {
+                    string Out = string.Empty;
+                    Body[i] = "<start>" + Body[i];
+                    this.ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<start>", "<br />&#xD;", Body[i], out Out);
+                    Body[i] = Out;
+                }
+
+                this.Body[i] = this.CleanString(this.Body[i]);
+            }
+
+            this.ContentSummary = CleanString(this.ContentSummary.Replace("&#8211;", ""));
 
             this.ImageList = ImageList;
             this.RealAuthor = Author;
-            this.Date = Date;
+            this.Date = WebUtility.HtmlDecode(Date.Split('>')[1].Trim());
         }
 
-        private string CleanHTMLTags(string Input)
+        private string CleanString(string Input)
         {
-            foreach (string s in RemoveFilter)
-            {
-                Input = Input.Replace(s, "");
-            }
-
-            Input = Input.Replace("&nbsp", " ");
-            Input = WebUtility.HtmlDecode(Input);
-
-            return Input;
+            return HTMLParserUtil.CleanHTMLTagsFromString(WebUtility.HtmlDecode(Input).Trim()).Replace("\r", "\n").Replace("\n ", "\n");
         }
     }
 }

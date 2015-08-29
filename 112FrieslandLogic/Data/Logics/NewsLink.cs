@@ -34,14 +34,14 @@ namespace _112FrieslandLogic.Data
             get { return Date; }
         }
 
-        public NewsLink(string URL, string ImageURL, string Title, string Content, string Author, string Date)
+        public NewsLink(string URL, string ImageURL, string Title, string Content, string Author, string Date, string Location, string Region)
         {
-            this.URL = "http://www.112fryslan.nl/news/" + URL;
-            this.ImageURL = "http://www.112fryslan.nl/" + ImageURL;
-            this.Title = WebUtility.HtmlDecode(Title);
-            this.Content = WebUtility.HtmlDecode(Content);
-            this.Author = WebUtility.HtmlDecode(Author);
-            this.Date = WebUtility.HtmlDecode(Date);
+            this.URL = URL;
+            this.ImageURL = ImageURL;
+            this.Title = WebUtility.HtmlDecode(Title).Trim();
+            this.Content = WebUtility.HtmlDecode(Content.Replace("-->\r\n", "").Replace("&#8211;", "-")).Trim().Replace("“", "").Replace("\r", "");
+            this.Author = WebUtility.HtmlDecode(Author).Trim();
+            this.Date = WebUtility.HtmlDecode(Date.Split('>')[1].Trim());
         }
 
         public override string ToString()

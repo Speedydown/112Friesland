@@ -12,7 +12,7 @@ namespace _112FrieslandLogic.Data
         public static IList<NewsLink> GetNewsLinksFromSource(string Source)
         {
             //Remove unusable HeaderData
-            Source = RemoveHeader(Source, "<div class='newsitems'>");
+            Source = RemoveHeader(Source, "<ul class=\"recent__icons\">");
 
             //Parse Items
             return ParseContent(Source);
@@ -42,7 +42,7 @@ namespace _112FrieslandLogic.Data
 
                 try
                 {
-                    NewsLinksAsHTML.Add(HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem newsitem_published'><div class='newsitem_head'>", "</div><div class='spacer'></div></div>", Input, out Input));
+                    NewsLinksAsHTML.Add(HTMLParserUtil.GetContentAndSubstringInput("<ul class=\"recent__icons\">", "<div class=\"recent__details group\">", Input, out Input, "<div class=\"pagination group\">", true));
                 }
                 catch
                 {
@@ -72,25 +72,31 @@ namespace _112FrieslandLogic.Data
 
         private static NewsLink GetNewsLinkFromHTMLSource(string Source)
         {
-            string URL = HTMLParserUtil.GetContentAndSubstringInput("='news/", "' class='image_container'>", Source, out Source);
-            string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("' src='", "' alt=''", Source, out Source);
+            Source = RemoveHeader(Source, "<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=");
+            string Date = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=", "</li>", Source, out Source);
+            string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            string URL = HTMLParserUtil.GetContentAndSubstringInput("<a href=\"", "\" title=", Source, out Source, "", false);
+            string Title = HTMLParserUtil.GetContentAndSubstringInput("title=\"", "\"><img", Source, out Source);
+            string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("src=\"", "\" class", Source, out Source);
 
-            string Title = string.Empty;
+            string Location = string.Empty;
+            string Content = string.Empty;
 
             try
             {
-                Title = HTMLParserUtil.GetContentAndSubstringInput("class='newsitem_title'>", " <img align='top'", Source, out Source);
+                Location = HTMLParserUtil.GetContentAndSubstringInput("<strong>", "</strong>", Source, out Source, "", false);
+                Content = HTMLParserUtil.GetContentAndSubstringInput("</strong>", "<a href=", Source, out Source);
             }
-            catch
+            catch 
             {
-                Title = HTMLParserUtil.GetContentAndSubstringInput("class='newsitem_title'>", "</div>\n<div class='admin-icons'>", Source, out Source);
+                string HTMLChar = Source.Contains("&#8211;") ? "&#8211;" : "&#x2013;";
+
+                Location = HTMLParserUtil.GetContentAndSubstringInput("<p>\r\n", HTMLChar, Source, out Source, "", false) + "-";
+                Content = HTMLParserUtil.GetContentAndSubstringInput(HTMLChar, "<a href=", Source, out Source);
             }
 
-            string Content = HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem_content'>", "<div class='spacer'></div><div class='newsmore'>", Source, out Source);
-            string Author = HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem_author'>", "<div class='newsitem_date'>", Source, out Source, "", false);
-            string Date = HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem_date'>", "</div>", Source, out Source);
-
-            return new NewsLink(URL, ImageURL,Title, Content, Author, Date);
+            return new NewsLink(URL, ImageURL, Title, Content, Author, Date, Location, Region);
         }
     }
 }

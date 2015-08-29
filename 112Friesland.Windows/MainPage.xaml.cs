@@ -121,6 +121,7 @@ namespace _112Friesland
             {
                 List<NewsLink> NewsLinks = (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
                 NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(2));
+                NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(3));
                 return NewsLinks;
             }
             catch
@@ -150,7 +151,7 @@ namespace _112Friesland
             try
             {
                 localSettings.Values["LastNewsItem"] = newsLinks.First().URL;
-                NotificationHandler.Run("_112FrieslandBackgroundW.BackgroundTask", "_112FryslânBackGroundWorker");
+                NotificationHandler.Run("_112FrieslandBackgroundW.BackgroundTask", "_112FryslânBackGroundWorker",15);
             }
             catch
             {

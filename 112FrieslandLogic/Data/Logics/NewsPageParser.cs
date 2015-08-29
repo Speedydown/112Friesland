@@ -12,7 +12,7 @@ namespace _112FrieslandLogic.Data
         public static NewsPage GetNewsPageFromSource(string Source)
         {
             //Remove unusable HeaderData
-            Source = RemoveHeader(Source, "class='newsitem_title'>");
+            Source = RemoveHeader(Source, "<div class=\"content__header\">");
 
             //Parse Items
             return GetNewsPageFromHTML(Source);
@@ -23,7 +23,7 @@ namespace _112FrieslandLogic.Data
             try
             {
                 return Input.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource(HTMLTextToCut, Input, false));
-                
+
             }
             catch (Exception)
             {
@@ -33,45 +33,28 @@ namespace _112FrieslandLogic.Data
 
         private static NewsPage GetNewsPageFromHTML(string Source)
         {
-            string Header = string.Empty;
+            string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
 
-            try
-            {
-                Header = HTMLParserUtil.GetContentAndSubstringInput("class='newsitem_title'>", " <img align='top' src", Source, out Source);
-            }
-            catch
-            {
-                Header = HTMLParserUtil.GetContentAndSubstringInput("class='newsitem_title'>", "</div>", Source, out Source);
-            }
 
-            string ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem_content'><b>", "</b><br />", Source, out Source);
-            string Content = string.Empty;
+            string ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p>", "</p>", Source, out Source);
+            List<string> Content = new List<string>();
 
-            try
-            {
-                Content = HTMLParserUtil.GetContentAndSubstringInput("</script><br /><br />", "<div class='swffile", Source, out Source);
-            }
-            catch
+            while (true)
             {
                 try
                 {
-                    Content = HTMLParserUtil.GetContentAndSubstringInput("<br />", "<div class='swffile", Source, out Source);
+                    Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p>", "</p>", Source, out Source));
                 }
                 catch
                 {
-                    try
-                    {
-                        Content = HTMLParserUtil.GetContentAndSubstringInput("</script><br /><br />", "</div>", Source, out Source);
-                    }
-                    catch
-                    {
-                        Content = HTMLParserUtil.GetContentAndSubstringInput("<br />", "</div>", Source, out Source);
-                    }
+                    break;
                 }
             }
 
-            string Author = HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem_author'>", "<div class='newsitem_date'>", Source, out Source,"", false);
-            string Date = HTMLParserUtil.GetContentAndSubstringInput("<div class='newsitem_date'>", "</div>", Source, out Source);
+            Source = RemoveHeader(Source, "<ul class=\"recent__info\">"); 
+            string Date = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=", "</li>", Source, out Source, "");
+            string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
 
             List<string> Images = GetImagesFromSource(Source);
 
@@ -83,13 +66,13 @@ namespace _112FrieslandLogic.Data
             List<string> ImageList = new List<string>();
 
             //Clean garbage html
-            Source = RemoveHeader(Source, "<div id='lightbox_gallery_controls_rightside'></div>");
+            Source = RemoveHeader(Source, "<ul class=\"content__gallery\"");
 
             while (Source.Length > 0)
             {
                 try
                 {
-                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("LightBoxGalleryRegisterImage(\"", "\", \"\", \"\")", Source, out Source);
+                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("<a href=\"", "\" data-lightbox=\"gallery\"", Source, out Source);
                     ImageList.Add(ImageURL);
                 }
                 catch

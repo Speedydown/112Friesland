@@ -40,6 +40,7 @@ namespace _112Friesland
             this.InitializeComponent();
             StatusBar.GetForCurrentView().ForegroundColor = Colors.Black;
             this.navigationHelper = new NavigationHelper(this);
+            this.NavigationCacheMode = NavigationCacheMode.Enabled;
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
@@ -78,12 +79,13 @@ namespace _112Friesland
                 {
                     NewsLinks = (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
                     NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(2));
+                    NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(3));
 
                     this.ContentListview.ItemsSource = NewsLinks;
 
                     if (LastLoadedDT == null)
                     {
-                        NotificationHandler.Run("_112FrieslandBackgroundWP.BackgroundTask", "_112FryslânBackGroundWorker");
+                        NotificationHandler.Run("_112FrieslandBackgroundWP.BackgroundTask", "_112FryslânBackGroundWorker", 30);
                     }
 
                     ApplicationData applicationData = ApplicationData.Current;
@@ -110,7 +112,10 @@ namespace _112Friesland
             {
                 try
                 {
-                    this.ContentListview.ItemsSource = NewsLinks;
+                    if (this.ContentListview.ItemsSource == null && NewsLinks != null)
+                    {
+                        this.ContentListview.ItemsSource = NewsLinks;
+                    }
                 }
                 catch
                 {
