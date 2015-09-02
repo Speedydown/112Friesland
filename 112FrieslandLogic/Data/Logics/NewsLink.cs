@@ -39,7 +39,10 @@ namespace _112FrieslandLogic.Data
             this.URL = URL;
             this.ImageURL = ImageURL;
             this.Title = WebUtility.HtmlDecode(Title).Trim();
-            this.Content = WebUtility.HtmlDecode(Content.Replace("-->\r\n", "").Replace("&#8211;", "-")).Trim().Replace("“", "").Replace("\r", "");
+
+            Location = Location.Replace("/r/n", "").Trim(); ;
+
+            this.Content = WebUtility.HtmlDecode(Location + Content.Replace("-->\r\n", "").Replace("&#8211;", "-")).Trim().Replace("“", "").Replace("\r", "");
             this.Author = WebUtility.HtmlDecode(Author).Trim();
             this.Date = WebUtility.HtmlDecode(Date.Split('>')[1].Trim());
         }

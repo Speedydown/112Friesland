@@ -1,0 +1,11 @@
+C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\_112FrieslandBackgroundWP.csproj;neutral
+C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\112Friesland.csproj;neutral
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;neutral
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WebCrawlerTools\WebCrawlerTools.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WebCrawlerTools\WebCrawlerTools.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral

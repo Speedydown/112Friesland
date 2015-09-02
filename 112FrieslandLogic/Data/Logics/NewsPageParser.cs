@@ -47,7 +47,14 @@ namespace _112FrieslandLogic.Data
                 }
                 catch
                 {
-                    break;
+                    try
+                    {
+                        Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p style=\"text-align: left;\">", "</p>", Source, out Source));
+                    }
+                    catch
+                    {
+                        break;
+                    }
                 }
             }
 
