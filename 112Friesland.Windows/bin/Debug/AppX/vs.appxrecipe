@@ -8,25 +8,25 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>52891Speedydown.112Frysln</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>E014A75D2DDA08EF3250B44A3CEDAEBBA39E0825F37DC8657260A1D3AE729DF0</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>52891Speedydown.112Frysln_1.1.0.4_neutral__cm96bbaf50z3r</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>B401812172EC52679E60AD30536B1CFC697C2BA4CFEDF36CD13FF35D9180544C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>52891Speedydown.112Frysln_1.1.0.6_neutral__cm96bbaf50z3r</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>52891Speedydown.112Frysln_cm96bbaf50z3r!App</RegisteredUserModeAppID>
     <RegisteredPackageID>52891Speedydown.112Frysln</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.4</RegisteredVersion>
+    <RegisteredVersion>1.1.0.6</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-02T21:38:14.707</Modified>
+      <Modified>2015-09-06T12:59:54.328</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\112Friesland.Windows.exe">
       <PackagePath>112Friesland.Windows.exe</PackagePath>
-      <Modified>2015-09-02T21:38:07.313</Modified>
+      <Modified>2015-09-06T12:51:43.163</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
       <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
@@ -42,11 +42,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\bin\Debug\_112FrieslandBackgroundW.winmd">
       <PackagePath>_112FrieslandBackgroundW.winmd</PackagePath>
-      <Modified>2015-09-02T21:38:06.602</Modified>
+      <Modified>2015-09-06T12:51:42.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\_112FrieslandLogic.winmd">
       <PackagePath>_112FrieslandLogic.winmd</PackagePath>
-      <Modified>2015-09-02T21:38:06.153</Modified>
+      <Modified>2015-09-06T12:51:42.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\XamlControlLibrary.dll">
       <PackagePath>XamlControlLibrary.dll</PackagePath>
@@ -207,7 +207,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-02T21:31:56.505</Modified>
+      <Modified>2015-09-06T12:59:47.187</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

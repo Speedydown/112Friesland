@@ -79,7 +79,7 @@ namespace _112FrieslandLogic.Data
             {
                 try
                 {
-                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("<a href=\"", "\" data-lightbox=\"gallery\"", Source, out Source);
+                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("<a href=\"", "\" data-lightbox=\"gallery\"", Source, out Source, "\"  rel=\"lightbox[gal]");
                     ImageList.Add(ImageURL);
                 }
                 catch
