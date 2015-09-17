@@ -207,17 +207,17 @@
     <PackageInfo>
       <OsMinVersion>6.3.1.0</OsMinVersion>
       <PackageArchitecture>Neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>2015.902.2347.0</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2015.906.1455.0</PackageMaxArchitectureVersion>
     </PackageInfo>
     <PackageInfo>
       <OsMinVersion>6.3.1.0</OsMinVersion>
       <PackageArchitecture>Neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>2015.902.2347.0</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2015.906.1455.0</PackageMaxArchitectureVersion>
     </PackageInfo>
     <PackageInfo>
       <OsMinVersion>6.3.1.0</OsMinVersion>
       <PackageArchitecture>Neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>2015.902.2347.0</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2015.906.1455.0</PackageMaxArchitectureVersion>
     </PackageInfo>
   </PackageInfoList>
 </StoreAssociation>

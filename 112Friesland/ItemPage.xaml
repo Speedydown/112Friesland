@@ -20,6 +20,6 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <CLib:DisplayNewsItemControl Grid.Row="0" x:Name="NewsItemControl"/>
-        <CLib:LoadingControl Grid.Row="0" x:Name="LoadingControl" TextColor="Black" ErrorText="112Groningen is niet beschikbaar :(" ErrorSubText="Probeer het later opnieuw."  LoadingText="Een ogenblik geduld."/>
+        <CLib:LoadingControl Grid.Row="0" x:Name="LoadingControl" TextColor="Black" ErrorText="112Fryslân.nl is niet beschikbaar :(" ErrorSubText="Kan het artikel niet openen, probeer het later opnieuw."  LoadingText="Een ogenblik geduld."/>
     </Grid>
 </Page>

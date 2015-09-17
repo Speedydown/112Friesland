@@ -57,3 +57,5 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\qualifiers
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\ProjectArchitectures.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Release\Styles\112FryslanDictionary.xbf
+C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\Newtonsoft.Json.dll
+C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\Newtonsoft.Json.xml

@@ -22,6 +22,11 @@
     <RootPropertyPathName Name="ErrorTextVisibility" />
     <RootPropertyPathName Name="ErrorText" />
     <RootPropertyPathName Name="LoadingText" />
+    <RootPropertyPathName Name="ToggleSwitches" />
+    <RootPropertyPathName Name="IsOn" />
+    <RootPropertyPathName Name="ForeGroundColor" />
+    <RootPropertyPathName Name="Header" />
+    <RootPropertyPathName Name="BackgroundColor" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
@@ -38,9 +43,12 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootEvent Name="Tapped" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -78,7 +86,9 @@
       <RootProperty Name="Content" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectionMode" />
@@ -96,6 +106,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Height" />
       <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -123,6 +136,7 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Margin" />
@@ -153,5 +167,14 @@
     </RootType>
     <RootType FullName="XamlControlLibrary.DisplayNewsItemControl" />
     <RootType FullName="XamlControlLibrary.LoadingControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="IsOn" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+    </RootType>
+    <RootType FullName="XamlControlLibrary.SettingsControl" />
   </Roots.RootTypes>
 </Roots>

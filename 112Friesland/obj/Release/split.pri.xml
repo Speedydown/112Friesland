@@ -97,6 +97,11 @@
 						<Value>XamlControlLibrary\LoadingControl.xbf</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="SettingsControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/XamlControlLibrary/SettingsControl.xbf">
+					<Candidate type="Path">
+						<Value>XamlControlLibrary\SettingsControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="XamlControlLibrary.xr.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/XamlControlLibrary/XamlControlLibrary.xr.xml">
 					<Candidate type="Path">
 						<Value>XamlControlLibrary\XamlControlLibrary.xr.xml</Value>
