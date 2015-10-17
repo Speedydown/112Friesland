@@ -26,3 +26,4 @@ C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\obj\Debug\
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\obj\Debug\qualifiers.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\bin\Debug\Newtonsoft.Json.dll

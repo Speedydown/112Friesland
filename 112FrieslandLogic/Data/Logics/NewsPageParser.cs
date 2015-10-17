@@ -35,8 +35,18 @@ namespace _112FrieslandLogic.Data
         {
             string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
 
+            string ContentSummary = string.Empty;
 
-            string ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p>", "</p>", Source, out Source);
+            try
+            {
+                ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p>", "</p>", Source, out Source);
+            }
+            catch
+            {
+                ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p class=\"western\">", "</p>", Source, out Source);
+            }
+
+            
             List<string> Content = new List<string>();
 
             while (true)
@@ -53,7 +63,14 @@ namespace _112FrieslandLogic.Data
                     }
                     catch
                     {
-                        break;
+                        try
+                        {
+                            Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p class=\"western\">", "</p>", Source, out Source));
+                        }
+                        catch
+                        {
+                            break;
+                        }
                     }
                 }
             }

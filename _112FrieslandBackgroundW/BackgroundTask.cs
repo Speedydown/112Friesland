@@ -35,9 +35,9 @@ namespace _112FrieslandBackgroundW
 
         private void CreateTiles(IList<INewsLink> Content, int Counter)
         {
-            XmlDocument RectangleTile = TileXmlHandler.CreateRectangleTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150Text01), Content, Counter, string.Empty, string.Empty);
+            XmlDocument RectangleTile = TileXmlHandler.CreateRectangleTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150Text01), Content, Counter, string.Empty, string.Empty, "112Fryslân");
             XmlDocument SquareTile = TileXmlHandler.CreateLargeSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare310x310Text01), Content);
-            XmlDocument SmallTile = TileXmlHandler.CreateSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150PeekImageAndText03), Content, "ms-appx:///assets/Logo.scale-100.png", "112Fryslân");
+            XmlDocument SmallTile = TileXmlHandler.CreateSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150PeekImageAndText03), Content, "ms-appx:///assets/Logo.scale-100.png", "112Fryslân", "112Fryslân");
 
             TileXmlHandler.CreateTileUpdate(new XmlDocument[] { RectangleTile, SquareTile, SmallTile });
         }

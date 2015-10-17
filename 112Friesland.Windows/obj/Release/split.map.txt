@@ -6,6 +6,7 @@
 [Files]
 "C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\split.pri"			"resources.pri"
 "C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\PackageLayout\XamlControlLibrary\XamlControlLibrary.xr.xml"			"XamlControlLibrary\XamlControlLibrary.xr.xml"
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\PackageLayout\XamlControlLibrary\SettingsControl.xbf"			"XamlControlLibrary\SettingsControl.xbf"
 "C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\PackageLayout\XamlControlLibrary\LoadingControl.xbf"			"XamlControlLibrary\LoadingControl.xbf"
 "C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\PackageLayout\XamlControlLibrary\DisplayNewsItemControlWideScreen.xbf"			"XamlControlLibrary\DisplayNewsItemControlWideScreen.xbf"
 "C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\PackageLayout\XamlControlLibrary\DisplayNewsItemControl.xbf"			"XamlControlLibrary\DisplayNewsItemControl.xbf"

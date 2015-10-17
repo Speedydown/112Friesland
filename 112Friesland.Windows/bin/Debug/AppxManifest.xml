@@ -56,6 +56,7 @@
         <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.Advertisement" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.AdEventArgs" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.SdkInfoProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WRCHelperLibrary.Settings.SettingsContainer" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>

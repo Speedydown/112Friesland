@@ -58,4 +58,3 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\qualifiers.t
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\Debug\ProjectArchitectures.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Debug\Newtonsoft.Json.xml

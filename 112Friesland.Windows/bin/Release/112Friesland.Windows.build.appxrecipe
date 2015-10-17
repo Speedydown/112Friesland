@@ -37,6 +37,9 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\XamlControlLibrary.dll">
       <PackagePath>XamlControlLibrary.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\bin\Release\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Release\WebCrawlerTools.dll">
       <PackagePath>WebCrawlerTools.dll</PackagePath>
     </AppxPackagedFile>
@@ -149,6 +152,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\LoadingControl.xbf">
       <PackagePath>XamlControlLibrary\LoadingControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Release\SettingsControl.xbf">
+      <PackagePath>XamlControlLibrary\SettingsControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Release\112Friesland.Windows.xr.xml">
       <PackagePath>112Friesland.Windows.xr.xml</PackagePath>

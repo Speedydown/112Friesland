@@ -32,8 +32,8 @@ namespace _112FrieslandBackgroundWP
 
         private void CreateTiles(IList<INewsLink> Content, int Counter)
         {
-            XmlDocument RectangleTile = TileXmlHandler.CreateRectangleTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150IconWithBadgeAndText), Content, Counter, "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân.nl");
-            XmlDocument SquareTile = TileXmlHandler.CreateSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150IconWithBadge), Content, "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân");
+            XmlDocument RectangleTile = TileXmlHandler.CreateRectangleTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileWide310x150IconWithBadgeAndText), Content, Counter, "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân.nl", "112Fryslân");
+            XmlDocument SquareTile = TileXmlHandler.CreateSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150IconWithBadge), Content, "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân", "112Fryslân");
             XmlDocument SmallTile = TileXmlHandler.CreateSmallSquareTile(TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare71x71IconWithBadge), "ms-appx:///assets/BadgeLogo.scale-240.png", "112Fryslân");
 
             TileXmlHandler.CreateTileUpdate(new XmlDocument[] { RectangleTile, SquareTile, SmallTile });

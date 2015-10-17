@@ -71,7 +71,7 @@ namespace _112Friesland
 
             TileUpdateManager.CreateTileUpdaterForApplication().Clear();
             BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
-            LoadingControl.SetLoadingStatus(true);
+            LoadingControl.SetLoadingStatus(true, this.ContentListview.Items.Count == 0);
 
             if (LastLoadedDT == null || NewsLinks == null || DateTime.Now.Subtract((DateTime)LastLoadedDT).TotalMinutes > 5)
             {

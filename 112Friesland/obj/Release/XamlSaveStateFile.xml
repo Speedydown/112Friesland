@@ -1,9 +1,9 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland\obj\release\intermediatexaml\112friesland.exe" HashGuid="21eef3ff-8974-c313-5518-d1cbd467ff9b" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\wrchelperlibrary\bin\release\wrchelperlibrary.winmd" HashGuid="b7fb69ad-5174-3706-98d2-6493aea6bf23" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\xamlcontrollibrary\bin\release\xamlcontrollibrary.dll" HashGuid="aa8169d4-86bd-7c52-afe7-8bee2d7be951" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundwp\bin\release\_112frieslandbackgroundwp.winmd" HashGuid="431b5c2a-95a7-c22b-dbc6-2b4defe11e29" />
+    <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland\obj\release\intermediatexaml\112friesland.exe" HashGuid="686652b4-d128-d923-57e6-87e5bc4e2350" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\wrchelperlibrary\bin\release\wrchelperlibrary.winmd" HashGuid="f74d8707-94ba-0a59-3c17-db4b6181d2e8" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\xamlcontrollibrary\bin\release\xamlcontrollibrary.dll" HashGuid="dfcedbf4-9435-3d40-82d2-61e66a0c76b5" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundwp\bin\release\_112frieslandbackgroundwp.winmd" HashGuid="1fb80e15-d149-166a-ad1a-14dced553662" />
     <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\release\_112frieslandlogic.winmd" HashGuid="d43c99c4-3bea-2999-e7d0-485fecdb45e2" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

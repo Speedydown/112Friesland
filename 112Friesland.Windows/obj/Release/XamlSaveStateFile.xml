@@ -1,11 +1,11 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland.windows\obj\release\intermediatexaml\112friesland.windows.exe" HashGuid="4120f63d-dc25-710e-66ad-1df22ebc0e13" />
+    <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland.windows\obj\release\intermediatexaml\112friesland.windows.exe" HashGuid="3e9f402e-28c4-e511-d0b6-54aed8add6e2" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoft.advertising.winrt.ui.winmd" HashGuid="6588494d-37e3-4bf8-bf82-6a4bc10c0818" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoftadvertising.winmd" HashGuid="0dde57b7-8c99-5b9a-0771-4cdcca925c59" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\wrchelperlibrary\bin\release\wrchelperlibrary.winmd" HashGuid="3ca87d6e-214f-ecfb-c5c8-d1bd322eb3a7" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\xamlcontrollibrary\bin\release\xamlcontrollibrary.dll" HashGuid="8692d0e9-21cc-63fa-b2b0-e346b8e20054" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundw\bin\release\_112frieslandbackgroundw.winmd" HashGuid="9995aadb-71cc-6b8c-58cf-9cd5a8d27187" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\wrchelperlibrary\bin\release\wrchelperlibrary.winmd" HashGuid="f74d8707-94ba-0a59-3c17-db4b6181d2e8" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\xamlcontrollibrary\bin\release\xamlcontrollibrary.dll" HashGuid="dfcedbf4-9435-3d40-82d2-61e66a0c76b5" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundw\bin\release\_112frieslandbackgroundw.winmd" HashGuid="4b2b629b-cee3-00d5-783e-ae4989924628" />
     <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\release\_112frieslandlogic.winmd" HashGuid="d43c99c4-3bea-2999-e7d0-485fecdb45e2" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

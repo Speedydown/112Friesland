@@ -22,11 +22,12 @@
     <RootPropertyPathName Name="ErrorTextVisibility" />
     <RootPropertyPathName Name="ErrorText" />
     <RootPropertyPathName Name="LoadingText" />
+    <RootPropertyPathName Name="Settings" />
     <RootPropertyPathName Name="ToggleSwitches" />
     <RootPropertyPathName Name="IsOn" />
-    <RootPropertyPathName Name="ForeGroundColor" />
+    <RootPropertyPathName Name="Foreground" />
     <RootPropertyPathName Name="Header" />
-    <RootPropertyPathName Name="BackgroundColor" />
+    <RootPropertyPathName Name="Background" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
@@ -88,6 +89,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
@@ -173,7 +176,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
       <RootProperty Name="IsOn" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="BorderBrush" />
     </RootType>
     <RootType FullName="XamlControlLibrary.SettingsControl" />
   </Roots.RootTypes>

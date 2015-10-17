@@ -24,4 +24,3 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Release\quali
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Release\qualifiers.txt.intermediate
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Release\Newtonsoft.Json.dll
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Release\Newtonsoft.Json.xml

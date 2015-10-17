@@ -135,7 +135,7 @@ namespace _112Friesland
         private async Task LoadData()
         {
             LoadingControl.DisplayLoadingError(false);
-            LoadingControl.SetLoadingStatus(true);
+            LoadingControl.SetLoadingStatus(true, NewsLV.Items.Count == 0);
             NewsLV.ItemsSource = null;
 
             Task<IList<NewsLink>> GetNewsLinksTask = GetNewsLinksOperationAsTask();
