@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="52891Speedydown.112Frysln" Publisher="CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE" Version="1.1.0.6" ProcessorArchitecture="neutral" />
+  <Identity Name="52891Speedydown.112Frysln" Publisher="CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE" Version="1.1.0.7" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>112Fryslân</DisplayName>
     <PublisherDisplayName>Speedydown</PublisherDisplayName>

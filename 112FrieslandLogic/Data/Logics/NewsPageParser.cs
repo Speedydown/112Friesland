@@ -33,6 +33,7 @@ namespace _112FrieslandLogic.Data
 
         private static NewsPage GetNewsPageFromHTML(string Source)
         {
+            string BackupSource = Source;
             string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
 
             string ContentSummary = string.Empty;
@@ -43,10 +44,17 @@ namespace _112FrieslandLogic.Data
             }
             catch
             {
-                ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p class=\"western\">", "</p>", Source, out Source);
+                try
+                {
+                    ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p class=\"western\">", "</p>", Source, out Source);
+                }
+                catch
+                {
+                    ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p class=\"introductie\">", "</p>", Source, out Source);
+                }
             }
 
-            
+
             List<string> Content = new List<string>();
 
             while (true)
@@ -69,18 +77,26 @@ namespace _112FrieslandLogic.Data
                         }
                         catch
                         {
-                            break;
+                            try
+                            {
+                                Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p class=\"introductie\">", "</p>", Source, out Source));
+                                
+                            }
+                            catch
+                            {
+                                break;
+                            }
                         }
                     }
                 }
             }
 
-            Source = RemoveHeader(Source, "<ul class=\"recent__info\">"); 
+            Source = RemoveHeader(Source, "<ul class=\"recent__info\">");
             string Date = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=", "</li>", Source, out Source, "");
             string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
             string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
 
-            List<string> Images = GetImagesFromSource(Source);
+            List<string> Images = GetImagesFromSource(BackupSource);
 
             return new NewsPage(Header, ContentSummary, Content, Images, Author, Date);
         }
@@ -90,13 +106,13 @@ namespace _112FrieslandLogic.Data
             List<string> ImageList = new List<string>();
 
             //Clean garbage html
-            Source = RemoveHeader(Source, "<ul class=\"content__gallery\"");
+            Source = RemoveHeader(Source, "class=\"clearing-thumbs\"");
 
             while (Source.Length > 0)
             {
                 try
                 {
-                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("<a href=\"", "\" data-lightbox=\"gallery\"", Source, out Source, "\"  rel=\"lightbox[gal]");
+                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("a href=\"", "\"><img src", Source, out Source, string.Empty);
                     ImageList.Add(ImageURL);
                 }
                 catch

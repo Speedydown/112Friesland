@@ -92,8 +92,23 @@ namespace _112FrieslandLogic.Data
             {
                 string HTMLChar = Source.Contains("&#8211;") ? "&#8211;" : "&#x2013;";
 
-                Location = HTMLParserUtil.GetContentAndSubstringInput("<p>\r\n", HTMLChar, Source, out Source, "", false) + "-";
-                Content = HTMLParserUtil.GetContentAndSubstringInput(HTMLChar, "<a href=", Source, out Source);
+                try
+                {
+                    Location = HTMLParserUtil.GetContentAndSubstringInput("<p>\r\n", HTMLChar, Source, out Source, "", false) + "-";
+                }
+                catch
+                {
+                    Location = HTMLParserUtil.GetContentAndSubstringInput("<p>\r\n","- ", Source, out Source, "", false) + "-";
+                }
+
+                try
+                {
+                    Content = HTMLParserUtil.GetContentAndSubstringInput(HTMLChar, "<a href=", Source, out Source);
+                }
+                catch
+                {
+                    Content = HTMLParserUtil.GetContentAndSubstringInput("- ", "<a href=", Source, out Source);
+                }
             }
 
             return new NewsLink(URL, ImageURL, Title, Content, Author, Date, Location, Region);
