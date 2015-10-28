@@ -106,13 +106,13 @@ namespace _112FrieslandLogic.Data
             List<string> ImageList = new List<string>();
 
             //Clean garbage html
-            Source = RemoveHeader(Source, "class=\"clearing-thumbs\"");
+            Source = RemoveHeader(Source, "<ul class=\"content__gallery\">");
 
             while (Source.Length > 0)
             {
                 try
                 {
-                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("a href=\"", "\"><img src", Source, out Source, string.Empty);
+                    string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("\" href=\"", "\" data-rel", Source, out Source, string.Empty);
                     ImageList.Add(ImageURL);
                 }
                 catch
