@@ -35,6 +35,8 @@ namespace _112FrieslandLogic.Data
         {
             string BackupSource = Source;
             string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
+            Source = RemoveHeader(Source, "itemprop=\"datePublished\"");
+            string Date = HTMLParserUtil.GetContentAndSubstringInput(">", "</li>", Source, out Source, "");
 
             string ContentSummary = string.Empty;
 
@@ -91,8 +93,6 @@ namespace _112FrieslandLogic.Data
                 }
             }
 
-            Source = RemoveHeader(Source, "<ul class=\"recent__info\">");
-            string Date = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=", "</li>", Source, out Source, "");
             string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
             string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
 

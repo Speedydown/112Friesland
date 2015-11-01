@@ -78,7 +78,7 @@ namespace _112FrieslandLogic.Data
             }
         }
 
-        public Uri MediaFile { get; private set;}
+        public Uri MediaFile { get; private set; }
 
         public Uri YoutubeURL
         {
@@ -120,7 +120,15 @@ namespace _112FrieslandLogic.Data
 
             this.ImageList = ImageList;
             this.RealAuthor = Author;
-            this.Date = WebUtility.HtmlDecode(Date.Split('>')[1].Trim());
+
+            if (Date.Contains("Gepubliceerd op:"))
+            {
+                this.Date = WebUtility.HtmlDecode(Date.Substring("Gepubliceerd op:".Length)).Trim();
+            }
+            else
+            {
+                this.Date = WebUtility.HtmlDecode(Date).Trim();
+            }
         }
 
         private string CleanString(string Input)
