@@ -850,7 +850,3 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
 }
 
 
-
-
-
-

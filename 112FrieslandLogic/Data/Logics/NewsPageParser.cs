@@ -7,15 +7,15 @@ using WebCrawlerTools;
 
 namespace _112FrieslandLogic.Data
 {
-    public static class NewsPageParser
+    internal static class NewsPageParser
     {
-        public static NewsPage GetNewsPageFromSource(string Source)
+        public async static Task<NewsPage> GetNewsPageFromSource(string Source)
         {
             //Remove unusable HeaderData
             Source = RemoveHeader(Source, "<div class=\"content__header\">");
 
             //Parse Items
-            return GetNewsPageFromHTML(Source);
+            return await GetNewsPageFromHTML(Source);
         }
 
         private static string RemoveHeader(string Input, string HTMLTextToCut)
@@ -31,77 +31,118 @@ namespace _112FrieslandLogic.Data
             }
         }
 
-        private static NewsPage GetNewsPageFromHTML(string Source)
+        private static readonly string[] Paragraphs = new string[] { "<p>", "<p class=\"western\">", "<p class=\"introductie\">" };
+        private static readonly string[] Content = new string[] { "<p>", "<p style=\"text-align: left;\">", "<p class=\"western\">", "<p class=\"introductie\">" };
+
+        private async static Task<NewsPage> GetNewsPageFromHTML(string Source)
         {
-            string BackupSource = Source;
+            Task<List<string>> ImageTask = Task.Run(() => GetImagesFromSource(Source));
+
             string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
             Source = RemoveHeader(Source, "itemprop=\"datePublished\"");
             string Date = HTMLParserUtil.GetContentAndSubstringInput(">", "</li>", Source, out Source, "");
 
             string ContentSummary = string.Empty;
 
-            try
+            foreach (string p in Paragraphs)
             {
-                ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p>", "</p>", Source, out Source);
-            }
-            catch
-            {
+
                 try
                 {
-                    ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p class=\"western\">", "</p>", Source, out Source);
+                    string backupSource = Source;
+                    ContentSummary = HTMLParserUtil.GetContentAndSubstringInput(p, "</p>", Source, out Source);
+
+                    if (ContentSummary == string.Empty)
+                    {
+                        Source = backupSource;
+                        continue;
+                    }
+
+                    break;
                 }
                 catch
                 {
-                    ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<p class=\"introductie\">", "</p>", Source, out Source);
+                    continue;
                 }
+            }
+
+            //Fix when divs are used
+            if (ContentSummary == string.Empty)
+            {
+                Source = Source.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource("<div>", Source, false));
+                ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<div>", "</div>", Source, out Source);
             }
 
 
             List<string> Content = new List<string>();
 
-            while (true)
+            bool Running = true;
+
+            string BackupSourceForWhenDivsAreUsed = Source;
+
+            while (Running)
             {
-                try
+                string TempContent = null;
+
+                foreach (string p in Paragraphs)
                 {
-                    Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p>", "</p>", Source, out Source));
-                }
-                catch
-                {
+
                     try
                     {
-                        Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p style=\"text-align: left;\">", "</p>", Source, out Source));
+                        TempContent = HTMLParserUtil.GetContentAndSubstringInput(p, "</p>", Source, out Source);
+                        break;
                     }
                     catch
                     {
-                        try
+                        continue;
+                    }
+                }
+
+                if (TempContent == null)
+                {
+                    Running = false;
+                }
+                else if (TempContent != string.Empty)
+                {
+                    Content.Add(TempContent);
+                }
+            }
+
+            //Fix when divs are used
+            if (Content.Count == 0)
+            {
+                while (true)
+                {
+                    try
+                    {
+
+                        BackupSourceForWhenDivsAreUsed = BackupSourceForWhenDivsAreUsed.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource("<div>", BackupSourceForWhenDivsAreUsed, false));
+                        string TempContent = HTMLParserUtil.GetContentAndSubstringInput("<div>", "</div>", BackupSourceForWhenDivsAreUsed, out BackupSourceForWhenDivsAreUsed);
+
+                        if (TempContent.Contains("<"))
                         {
-                            Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p class=\"western\">", "</p>", Source, out Source));
+                            break;
                         }
-                        catch
-                        {
-                            try
-                            {
-                                Content.Add(HTMLParserUtil.GetContentAndSubstringInput("<p class=\"introductie\">", "</p>", Source, out Source));
-                                
-                            }
-                            catch
-                            {
-                                break;
-                            }
-                        }
+
+                        Content.Add(TempContent);
+                    }
+                    catch
+                    {
+                        break;
                     }
                 }
             }
 
+
             string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
             string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
 
-            List<string> Images = GetImagesFromSource(BackupSource);
+            List<string> Images = await ImageTask;
 
             return new NewsPage(Header, ContentSummary, Content, Images, Author, Date);
         }
 
-        private static List<string> GetImagesFromSource(string Source)
+        private async static Task<List<string>> GetImagesFromSource(string Source)
         {
             List<string> ImageList = new List<string>();
 

@@ -34,7 +34,7 @@ namespace _112FrieslandLogic
         {
             string PageSource = await GetDataFromURL(URL);
 
-            return NewsPageParser.GetNewsPageFromSource(PageSource);
+            return await NewsPageParser.GetNewsPageFromSource(PageSource);
         }
 
         public static IAsyncOperation<string> GetDataFromURL(string URL)
