@@ -3,6 +3,7 @@ C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\_112FrieslandBackgroundWP.pri
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\WRCHelperLibrary.winmd
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\_112FrieslandLogic.winmd
+C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\WebCrawlerTools.dll
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\WRCHelperLibrary.pdb
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\WRCHelperLibrary.pri
@@ -26,4 +27,3 @@ C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\qualifiers.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\Newtonsoft.Json.dll
