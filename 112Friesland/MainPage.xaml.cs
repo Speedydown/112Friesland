@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -60,6 +61,11 @@ namespace _112Friesland
             this.LoadData();
         }
 
+        private async Task<List<NewsLink>> GetNewsLinksByPageAsTask(int PageNumber)
+        {
+            return (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
+        }
+
         public async void LoadData(bool OverrideTimer = false)
         {
             LoadingControl.DisplayLoadingError(false);
@@ -77,9 +83,19 @@ namespace _112Friesland
             {
                 try
                 {
-                    NewsLinks = (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
-                    NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(2));
-                    NewsLinks.AddRange((List<NewsLink>)await DataHandler.GetNewsLinksByPage(3));
+                    Task[] PageTask = new Task[] {
+                        Task.Run(() => GetNewsLinksByPageAsTask(1)),
+                        Task.Run(() => GetNewsLinksByPageAsTask(2)),
+                        Task.Run(() => GetNewsLinksByPageAsTask(3))
+                    };
+
+                    Task.WaitAll(PageTask);
+                    NewsLinks = new List<NewsLink>();
+
+                    foreach (Task<List<NewsLink>> t in PageTask)
+                    {
+                        NewsLinks.AddRange(await t);
+                    }
 
                     this.ContentListview.ItemsSource = NewsLinks;
 
