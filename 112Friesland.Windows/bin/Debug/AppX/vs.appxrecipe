@@ -1,221 +1,221 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SPEEDY</Machine>
+    <Machine>SPEEDYTOPV2</Machine>
     <WindowsUser>Teake</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>52891Speedydown.112Frysln</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>1371E2F40423A51648CAEBE6224F419BAC6669C1888734B826B1319EDEAB6328</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>52891Speedydown.112Frysln_1.1.0.11_neutral__cm96bbaf50z3r</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>D5888EF7D94DAFDB9F2F306BABB5E26D1FDBA3D246A03E43CE512B22488CB176</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>52891Speedydown.112Frysln_1.1.0.12_neutral__cm96bbaf50z3r</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>52891Speedydown.112Frysln_cm96bbaf50z3r!App</RegisteredUserModeAppID>
     <RegisteredPackageID>52891Speedydown.112Frysln</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.11</RegisteredVersion>
+    <RegisteredVersion>1.1.0.12</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-24T16:44:28.447</Modified>
+      <Modified>2015-12-19T13:24:30.501</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\112Friesland.Windows.exe">
       <PackagePath>112Friesland.Windows.exe</PackagePath>
-      <Modified>2015-11-24T16:44:19.083</Modified>
+      <Modified>2015-12-19T13:24:20.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
       <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
-      <Modified>2013-09-13T10:42:48.000</Modified>
+      <Modified>2013-09-13T18:42:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\MicrosoftAdvertising.winmd">
       <PackagePath>MicrosoftAdvertising.winmd</PackagePath>
-      <Modified>2013-09-13T10:42:48.000</Modified>
+      <Modified>2013-09-13T18:42:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\bin\Debug\WRCHelperLibrary.winmd">
       <PackagePath>WRCHelperLibrary.winmd</PackagePath>
-      <Modified>2015-10-17T18:55:35.400</Modified>
+      <Modified>2015-11-29T20:25:18.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\bin\Debug\_112FrieslandBackgroundW.winmd">
       <PackagePath>_112FrieslandBackgroundW.winmd</PackagePath>
-      <Modified>2015-11-24T16:44:17.622</Modified>
+      <Modified>2015-12-19T13:24:19.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\_112FrieslandLogic.winmd">
       <PackagePath>_112FrieslandLogic.winmd</PackagePath>
-      <Modified>2015-11-24T15:16:38.086</Modified>
+      <Modified>2015-12-19T13:16:35.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\XamlControlLibrary.dll">
       <PackagePath>XamlControlLibrary.dll</PackagePath>
-      <Modified>2015-11-24T16:34:24.805</Modified>
+      <Modified>2015-11-29T20:25:19.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2015-09-07T18:14:14.787</Modified>
+      <Modified>2015-09-19T10:49:20.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.dll">
       <PackagePath>WebCrawlerTools.dll</PackagePath>
-      <Modified>2015-10-17T17:09:51.466</Modified>
+      <Modified>2015-11-29T20:25:17.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf">
       <PackagePath>Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf</PackagePath>
-      <Modified>2013-09-13T10:42:56.000</Modified>
+      <Modified>2013-09-13T18:42:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf">
       <PackagePath>Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf</PackagePath>
-      <Modified>2013-09-13T10:42:56.000</Modified>
+      <Modified>2013-09-13T18:42:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\bootstrap.html">
       <PackagePath>Microsoft.Advertising.WinRT.UI\bootstrap.html</PackagePath>
-      <Modified>2013-09-13T10:43:20.000</Modified>
+      <Modified>2013-09-13T18:43:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\ormma.js">
       <PackagePath>Microsoft.Advertising.WinRT.UI\ormma.js</PackagePath>
-      <Modified>2013-09-13T10:46:04.000</Modified>
+      <Modified>2013-09-13T18:46:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.591</Modified>
+      <Modified>2015-08-08T10:20:37.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\BadgeLogo.scale-180.png">
       <PackagePath>Assets\BadgeLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.592</Modified>
+      <Modified>2015-08-08T10:20:07.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\header_mask.png">
       <PackagePath>Assets\header_mask.png</PackagePath>
-      <Modified>2015-08-12T15:55:28.607</Modified>
+      <Modified>2015-08-08T09:59:25.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.593</Modified>
+      <Modified>2015-08-08T10:13:42.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Logo.scale-180.png">
       <PackagePath>Assets\Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.594</Modified>
+      <Modified>2015-08-08T10:13:29.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.595</Modified>
+      <Modified>2015-08-08T10:14:45.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\SmallLogo.scale-180.png">
       <PackagePath>Assets\SmallLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.596</Modified>
+      <Modified>2015-08-08T10:14:35.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\SmallLogo.targetsize-256.png">
       <PackagePath>Assets\SmallLogo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.597</Modified>
+      <Modified>2015-08-08T10:18:48.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.597</Modified>
+      <Modified>2015-08-08T10:21:41.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\SplashScreen.scale-180.png">
       <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.599</Modified>
+      <Modified>2015-08-08T10:21:29.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.600</Modified>
+      <Modified>2015-08-08T10:14:10.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Square310x310Logo.scale-180.png">
       <PackagePath>Assets\Square310x310Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.601</Modified>
+      <Modified>2015-08-08T10:16:31.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Square70x70Logo.scale-100.png">
       <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.602</Modified>
+      <Modified>2015-08-08T10:12:50.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Square70x70Logo.scale-180.png">
       <PackagePath>Assets\Square70x70Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.603</Modified>
+      <Modified>2015-08-08T10:12:34.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.604</Modified>
+      <Modified>2015-08-08T10:15:33.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\StoreLogo.scale-180.png">
       <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.604</Modified>
+      <Modified>2015-08-08T10:15:18.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.605</Modified>
+      <Modified>2015-08-08T10:18:00.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\Assets\Wide310x150Logo.scale-180.png">
       <PackagePath>Assets\Wide310x150Logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-12T15:55:28.606</Modified>
+      <Modified>2015-08-08T10:17:33.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Shared\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
-      <Modified>2015-08-12T15:55:28.351</Modified>
+      <Modified>2015-03-06T23:07:17.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\Styles\112FryslanDictionary.xbf">
       <PackagePath>Styles\112FryslanDictionary.xbf</PackagePath>
-      <Modified>2015-09-02T21:31:55.798</Modified>
+      <Modified>2015-12-19T13:24:20.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-09-02T21:31:55.790</Modified>
+      <Modified>2015-12-19T13:24:20.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\Controls\AdControl.xbf">
       <PackagePath>Controls\AdControl.xbf</PackagePath>
-      <Modified>2015-10-17T19:21:21.451</Modified>
+      <Modified>2015-12-19T13:24:20.596</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-09-02T21:31:55.794</Modified>
+      <Modified>2015-12-19T13:24:20.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\privacyPolicy.xbf">
       <PackagePath>privacyPolicy.xbf</PackagePath>
-      <Modified>2015-09-02T21:31:55.796</Modified>
+      <Modified>2015-12-19T13:24:20.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\DisplayNewsItemControlWideScreen.xbf">
       <PackagePath>XamlControlLibrary\DisplayNewsItemControlWideScreen.xbf</PackagePath>
-      <Modified>2015-09-23T17:47:42.085</Modified>
+      <Modified>2015-11-29T20:25:19.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\DisplayNewsItemControl.xbf">
       <PackagePath>XamlControlLibrary\DisplayNewsItemControl.xbf</PackagePath>
-      <Modified>2015-08-12T15:54:14.172</Modified>
+      <Modified>2015-11-29T20:25:19.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\LoadingControl.xbf">
       <PackagePath>XamlControlLibrary\LoadingControl.xbf</PackagePath>
-      <Modified>2015-08-12T15:54:14.193</Modified>
+      <Modified>2015-11-29T20:25:19.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\SettingsControl.xbf">
       <PackagePath>XamlControlLibrary\SettingsControl.xbf</PackagePath>
-      <Modified>2015-09-23T17:47:42.088</Modified>
+      <Modified>2015-11-29T20:25:19.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\112Friesland.Windows.xr.xml">
       <PackagePath>112Friesland.Windows.xr.xml</PackagePath>
-      <Modified>2015-08-12T15:55:29.190</Modified>
+      <Modified>2015-08-08T11:05:25.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\XamlControlLibrary.xr.xml">
       <PackagePath>XamlControlLibrary\XamlControlLibrary.xr.xml</PackagePath>
-      <Modified>2015-09-16T21:19:39.819</Modified>
+      <Modified>2015-09-19T10:49:21.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-24T16:44:19.516</Modified>
+      <Modified>2015-12-19T13:24:21.331</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
