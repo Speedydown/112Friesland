@@ -34,7 +34,7 @@ namespace _112FrieslandLogic.Data
             get { return Date; }
         }
 
-        public NewsLink(string URL, string ImageURL, string Title, string Content, string Author, string Date, string Location, string Region)
+        public NewsLink(string URL, string ImageURL, string Title, string Content, string Author, string Date, string Location)
         {
             this.URL = URL;
             this.ImageURL = ImageURL;
@@ -51,8 +51,5 @@ namespace _112FrieslandLogic.Data
         {
             return this.Author + " op " + this.Date;
         }
-
-
-       
     }
 }

@@ -74,8 +74,9 @@ namespace _112FrieslandLogic.Data
         {
             Source = RemoveHeader(Source, "<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=");
             string Date = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=", "</li>", Source, out Source);
-            string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
-            string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            string Author = HTMLParserUtil.GetContentAndSubstringInput("rel=\"author\">", "</a></u>", Source, out Source);
+            //string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            Source = RemoveHeader(Source, "<figure class=\"recent__figure\">");
             string URL = HTMLParserUtil.GetContentAndSubstringInput("<a href=\"", "\" title=", Source, out Source, "", false);
             string Title = HTMLParserUtil.GetContentAndSubstringInput("title=\"", "\"><img", Source, out Source);
             string ImageURL = HTMLParserUtil.GetContentAndSubstringInput("src=\"", "\" class", Source, out Source);
@@ -111,7 +112,7 @@ namespace _112FrieslandLogic.Data
                 }
             }
 
-            return new NewsLink(URL, ImageURL, Title, Content, Author, Date, Location, Region);
+            return new NewsLink(URL, ImageURL, Title, Content, Author, Date, Location);
         }
     }
 }

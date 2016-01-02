@@ -1,4 +1,4 @@
-MainPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland_2015.1219.1423.0_Bundle\112Friesland_2015.1219.1423.0_AnyCPU.appx
-SymbolPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\AppPackages\112Friesland_2015.1219.1423.0_Test\112Friesland_2015.1219.1423.0_AnyCPU.appxsym
-ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland_2015.1219.1423.0_Bundle\112Friesland_2015.1219.1423.0_scale-100.appx
-ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland_2015.1219.1423.0_Bundle\112Friesland_2015.1219.1423.0_scale-140.appx
+MainPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland_2016.102.2219.0_Bundle\112Friesland_2016.102.2219.0_AnyCPU.appx
+SymbolPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\AppPackages\112Friesland_2016.102.2219.0_Test\112Friesland_2016.102.2219.0_AnyCPU.appxsym
+ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland_2016.102.2219.0_Bundle\112Friesland_2016.102.2219.0_scale-100.appx
+ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\Release\112Friesland_2016.102.2219.0_Bundle\112Friesland_2016.102.2219.0_scale-140.appx

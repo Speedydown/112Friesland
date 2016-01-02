@@ -134,8 +134,9 @@ namespace _112FrieslandLogic.Data
             }
 
 
-            string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
-            string Author = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            //string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
+            Source = Source.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource("rel=\"author\">", Source, false));
+            string Author = HTMLParserUtil.GetContentAndSubstringInput("rel=\"author\">", "</a></u>", Source, out Source);
 
             List<string> Images = await ImageTask;
 

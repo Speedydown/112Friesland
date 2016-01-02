@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Windows.Foundation;
 
@@ -11,6 +12,7 @@ namespace _112FrieslandLogic
     public static class DataHandler
     {
         private static readonly Random Randomizer = new Random();
+        private static readonly SemaphoreSlim Locker = new SemaphoreSlim(1,1);
 
         public static IAsyncOperation<IList<NewsLink>> GetNewsLinksByPage(int PageNumber)
         {
@@ -19,9 +21,7 @@ namespace _112FrieslandLogic
 
         private static async Task<IList<NewsLink>> GetNewsLinksByPageHelper(int PageNumber)
         {
-            // + "&random=" + Randomizer.Next(0, 2000000)
             string PageSource = await GetDataFromURL("http://www.112fryslan.nl/page/" + PageNumber);
-
             return NewsLinkParser.GetNewsLinksFromSource(PageSource);
         }
 
@@ -44,6 +44,7 @@ namespace _112FrieslandLogic
 
         private static async Task<string> GetDataFromURLHelper(string URL)
         {
+            await Locker.WaitAsync();
             string Output = string.Empty;
 
             try
@@ -61,6 +62,7 @@ namespace _112FrieslandLogic
 
             }
 
+            Locker.Release();
             return Output;
         }
     }
