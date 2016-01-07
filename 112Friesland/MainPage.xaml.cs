@@ -63,7 +63,7 @@ namespace _112Friesland
 
         private async Task<List<NewsLink>> GetNewsLinksByPageAsTask(int PageNumber)
         {
-            return (List<NewsLink>)await DataHandler.GetNewsLinksByPage(1);
+            return (List<NewsLink>)await DataHandler.GetNewsLinksByPage(PageNumber);
         }
 
         public async void LoadData(bool OverrideTimer = false)
