@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-kn"
+"ResourceDimensions"		"language-kn"
+
+[Files]
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\ARM\Release\split.language-kn.pri"			"resources.pri"

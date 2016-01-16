@@ -7,5 +7,9 @@ C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WebCrawlerTools\WebCrawlerTool
 C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
 C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
 C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
-C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\WRCHelperLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral
 C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;neutral

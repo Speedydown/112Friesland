@@ -1,5 +1,6 @@
 ﻿using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
+using BaseLogic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using Windows.ApplicationModel.Background;
 using Windows.Data.Xml.Dom;
 using Windows.Storage;
 using Windows.UI.Notifications;
-using WRCHelperLibrary;
+using XamlControlLibrary.Interfaces;
 
 namespace _112FrieslandBackgroundW
 {

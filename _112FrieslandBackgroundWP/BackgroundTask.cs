@@ -9,7 +9,8 @@ using _112FrieslandLogic.Data;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 using _112FrieslandLogic;
-using WRCHelperLibrary;
+using BaseLogic;
+using XamlControlLibrary.Interfaces;
 
 namespace _112FrieslandBackgroundWP
 {

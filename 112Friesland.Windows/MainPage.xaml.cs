@@ -2,6 +2,7 @@
 using _112FrieslandBackgroundW;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
+using BaseLogic;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,7 +22,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using WRCHelperLibrary;
 
 namespace _112Friesland
 {
@@ -200,7 +200,7 @@ namespace _112Friesland
 
                 try
                 {
-                    Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
+                    await Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                     {
                         if ((NewsLinks.Count > 0 && NewsLinks.First().URL != newsLinks.First().URL) || newsLinks.Count == 0)
                         {

@@ -26,8 +26,8 @@
       <qualifier name="Configuration" value="" />
       <qualifier name="AlternateForm" value="" />
     </default>
-    <indexer-config type="RESW" convertDotsToSlashes="true" initialPath="_112FrieslandLogic" />
-    <indexer-config type="RESJSON" initialPath="_112FrieslandLogic" />
+    <indexer-config type="RESW" convertDotsToSlashes="true" initialPath="112FrieslandLogic" />
+    <indexer-config type="RESJSON" initialPath="112FrieslandLogic" />
     <indexer-config type="RESFILES" qualifierDelimiter="." />
   </index>
   <index root="\" startIndexAt="obj\Debug\pri.resfiles">

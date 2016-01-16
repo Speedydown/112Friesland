@@ -1,0 +1,14 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland.windows\obj\x64\release\intermediatexaml\112friesland.windows.exe" HashGuid="666ec7f0-057f-d2d9-d967-fac0d6739fd3" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoft.advertising.winrt.ui.winmd" HashGuid="6588494d-37e3-4bf8-bf82-6a4bc10c0818" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoftadvertising.winmd" HashGuid="0dde57b7-8c99-5b9a-0771-4cdcca925c59" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\x64\release\112frieslandlogic.dll" HashGuid="f32e2ce5-bf71-4089-bc62-d4813c9bba7d" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\baselogic\bin\x64\release\baselogic.dll" HashGuid="86f9be93-68c0-1372-c5de-6538e70d2763" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\packages\sqlite.net.core-pcl.3.1.1\lib\portable-win8+net45+wp8+wpa81+monoandroid1+monotouch1\sqlite.net.dll" HashGuid="2223cbf7-68d4-e5e4-e5e4-a19696ad83b6" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\packages\sqlite.net-pcl.3.1.1\lib\windows8\sqlite.net.platform.winrt.dll" HashGuid="1bc7eaa0-e36a-f105-20d8-c57b14216cea" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\xamlcontrollibrary\bin\x64\release\xamlcontrollibrary.dll" HashGuid="6799310e-4bc4-357e-0957-4fa2a12d68b5" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundw\bin\x64\release\_112frieslandbackgroundw.winmd" HashGuid="4b2b629b-cee3-00d5-783e-ae4989924628" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

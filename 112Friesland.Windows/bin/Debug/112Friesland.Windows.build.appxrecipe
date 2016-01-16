@@ -37,7 +37,7 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\Debug\XamlControlLibrary.dll">
       <PackagePath>XamlControlLibrary.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WRCHelperLibrary\bin\Debug\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\WebCrawlerTools.dll">

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using WRCHelperLibrary;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI;
 using WebCrawlerTools;
+using XamlControlLibrary.Interfaces;
 
 namespace _112FrieslandLogic.Data
 {

@@ -2,6 +2,7 @@
 using _112FrieslandBackgroundWP;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
+using BaseLogic;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,7 +24,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using WRCHelperLibrary;
 
 namespace _112Friesland
 {
@@ -89,7 +89,7 @@ namespace _112Friesland
                         Task.Run(() => GetNewsLinksByPageAsTask(3))
                     };
 
-                    Task.WaitAll(PageTask);
+                    await Task.Run(() =>Task.WaitAll(PageTask));
                     NewsLinks = new List<NewsLink>();
 
                     foreach (Task<List<NewsLink>> t in PageTask)

@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-pa-arab"
+"ResourceDimensions"		"language-pa-arab-pk"
+
+[Files]
+"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\ARM\Release\split.language-pa-arab.pri"			"resources.pri"

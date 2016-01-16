@@ -3,6 +3,6 @@
   <PropertyGroup>
     <AppxPackageIsForStore>True</AppxPackageIsForStore>
     <AppxShowAllApps>True</AppxShowAllApps>
-    <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
   </PropertyGroup>
 </Project>

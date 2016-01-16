@@ -1,0 +1,12 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland\obj\x86\release\intermediatexaml\112friesland.exe" HashGuid="63449251-c7eb-b17f-eb75-d246f0df6877" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\x86\release\112frieslandlogic.dll" HashGuid="f32e2ce5-bf71-4089-bc62-d4813c9bba7d" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\baselogic\bin\x86\release\baselogic.dll" HashGuid="86f9be93-68c0-1372-c5de-6538e70d2763" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\packages\sqlite.net.core-pcl.3.1.1\lib\portable-win8+net45+wp8+wpa81+monoandroid1+monotouch1\sqlite.net.dll" HashGuid="2223cbf7-68d4-e5e4-e5e4-a19696ad83b6" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\packages\sqlite.net-pcl.3.1.1\lib\portable-win81+wpa81\sqlite.net.platform.winrt.dll" HashGuid="1bc7eaa0-e36a-f105-20d8-c57b14216cea" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\xamlcontrollibrary\bin\x86\release\xamlcontrollibrary.dll" HashGuid="1d5a01f3-32ad-824d-5144-11a3367322d3" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundwp\bin\x86\release\_112frieslandbackgroundwp.winmd" HashGuid="1fb80e15-d149-166a-ad1a-14dced553662" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

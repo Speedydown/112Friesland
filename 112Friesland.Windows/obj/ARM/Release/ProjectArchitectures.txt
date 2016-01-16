@@ -1,0 +1,13 @@
+C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\_112FrieslandBackgroundW.csproj;arm
+C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\112Friesland.Windows.csproj;arm
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;arm
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\BaseLogic\BaseLogic.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\BaseLogic\BaseLogic.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WebCrawlerTools\WebCrawlerTools.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\WebCrawlerTools\WebCrawlerTools.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;arm
+C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj;arm

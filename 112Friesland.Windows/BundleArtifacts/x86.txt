@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\x86\Release\112Friesland.Windows_1.1.0.16_Bundle\112Friesland.Windows_1.1.0.16_x86.appx
+SymbolPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\AppPackages\112Friesland.Windows_1.1.0.16_Test\112Friesland.Windows_1.1.0.16_x86.appxsym

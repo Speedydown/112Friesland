@@ -73,7 +73,6 @@ namespace _112FrieslandLogic.Data
                 ContentSummary = HTMLParserUtil.GetContentAndSubstringInput("<div>", "</div>", Source, out Source);
             }
 
-
             List<string> Content = new List<string>();
 
             bool Running = true;
