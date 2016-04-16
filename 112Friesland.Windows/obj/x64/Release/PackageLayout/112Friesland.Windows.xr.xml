@@ -77,8 +77,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
-    <RootType FullName="XamlControlLibrary.DisplayNewsItemControlWideScreen" />
-    <RootType FullName="XamlControlLibrary.LoadingControl">
+    <RootType FullName="BaseLogic.Xaml_Controls.DisplayNewsItemControlWideScreen" />
+    <RootType FullName="BaseLogic.Xaml_Controls.LoadingControl">
       <RootProperty Name="TextColor" />
       <RootProperty Name="ErrorText" />
       <RootProperty Name="ErrorSubText" />

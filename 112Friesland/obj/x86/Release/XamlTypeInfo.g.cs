@@ -149,9 +149,9 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[13];
-            _typeNameTable[0] = "XamlControlLibrary.DisplayNewsItemControl";
+            _typeNameTable[0] = "BaseLogic.Xaml_Controls.DisplayNewsItemControl";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "XamlControlLibrary.LoadingControl";
+            _typeNameTable[2] = "BaseLogic.Xaml_Controls.LoadingControl";
             _typeNameTable[3] = "Windows.UI.Xaml.Media.Brush";
             _typeNameTable[4] = "String";
             _typeNameTable[5] = "Windows.UI.Xaml.Visibility";
@@ -164,9 +164,9 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             _typeNameTable[12] = "_112Friesland.MainPage";
 
             _typeTable = new global::System.Type[13];
-            _typeTable[0] = typeof(global::XamlControlLibrary.DisplayNewsItemControl);
+            _typeTable[0] = typeof(global::BaseLogic.Xaml_Controls.DisplayNewsItemControl);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::XamlControlLibrary.LoadingControl);
+            _typeTable[2] = typeof(global::BaseLogic.Xaml_Controls.LoadingControl);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Media.Brush);
             _typeTable[4] = typeof(global::System.String);
             _typeTable[5] = typeof(global::Windows.UI.Xaml.Visibility);
@@ -211,8 +211,8 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_DisplayNewsItemControl() { return new global::XamlControlLibrary.DisplayNewsItemControl(); }
-        private object Activate_2_LoadingControl() { return new global::XamlControlLibrary.LoadingControl(); }
+        private object Activate_0_DisplayNewsItemControl() { return new global::BaseLogic.Xaml_Controls.DisplayNewsItemControl(); }
+        private object Activate_2_LoadingControl() { return new global::BaseLogic.Xaml_Controls.LoadingControl(); }
         private object Activate_6_ItemPage() { return new global::_112Friesland.ItemPage(); }
         private object Activate_10_ObservableDictionary() { return new global::_112Friesland.Common.ObservableDictionary(); }
         private object Activate_12_MainPage() { return new global::_112Friesland.MainPage(); }
@@ -234,7 +234,7 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  XamlControlLibrary.DisplayNewsItemControl
+            case 0:   //  BaseLogic.Xaml_Controls.DisplayNewsItemControl
                 userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_0_DisplayNewsItemControl;
                 xamlType = userType;
@@ -244,7 +244,7 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
                 xamlType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  XamlControlLibrary.LoadingControl
+            case 2:   //  BaseLogic.Xaml_Controls.LoadingControl
                 userType = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_2_LoadingControl;
                 userType.AddMemberName("TextColor");
@@ -325,7 +325,7 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
                 {
                     _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
-                    provider = new global::XamlControlLibrary.XamlControlLibrary_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    provider = new global::BaseLogic.BaseLogic_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                 }
                 return _otherProviders;
@@ -372,62 +372,62 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
 
         private object get_0_LoadingControl_TextColor(object instance)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             return that.TextColor;
         }
         private void set_0_LoadingControl_TextColor(object instance, object Value)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             that.TextColor = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
         private object get_1_LoadingControl_ErrorText(object instance)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             return that.ErrorText;
         }
         private void set_1_LoadingControl_ErrorText(object instance, object Value)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             that.ErrorText = (global::System.String)Value;
         }
         private object get_2_LoadingControl_ErrorSubText(object instance)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             return that.ErrorSubText;
         }
         private void set_2_LoadingControl_ErrorSubText(object instance, object Value)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             that.ErrorSubText = (global::System.String)Value;
         }
         private object get_3_LoadingControl_LoadingText(object instance)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             return that.LoadingText;
         }
         private void set_3_LoadingControl_LoadingText(object instance, object Value)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             that.LoadingText = (global::System.String)Value;
         }
         private object get_4_LoadingControl_ControlVisibility(object instance)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             return that.ControlVisibility;
         }
         private void set_4_LoadingControl_ControlVisibility(object instance, object Value)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             that.ControlVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
         private object get_5_LoadingControl_ErrorTextVisibility(object instance)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             return that.ErrorTextVisibility;
         }
         private void set_5_LoadingControl_ErrorTextVisibility(object instance, object Value)
         {
-            var that = (global::XamlControlLibrary.LoadingControl)instance;
+            var that = (global::BaseLogic.Xaml_Controls.LoadingControl)instance;
             that.ErrorTextVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
         private object get_6_ItemPage_NavigationHelper(object instance)
@@ -458,42 +458,42 @@ namespace _112Friesland._12Friesland_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "XamlControlLibrary.LoadingControl.TextColor":
-                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+            case "BaseLogic.Xaml_Controls.LoadingControl.TextColor":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaseLogic.Xaml_Controls.LoadingControl");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "TextColor", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_0_LoadingControl_TextColor;
                 xamlMember.Setter = set_0_LoadingControl_TextColor;
                 break;
-            case "XamlControlLibrary.LoadingControl.ErrorText":
-                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+            case "BaseLogic.Xaml_Controls.LoadingControl.ErrorText":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaseLogic.Xaml_Controls.LoadingControl");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ErrorText", "String");
                 xamlMember.Getter = get_1_LoadingControl_ErrorText;
                 xamlMember.Setter = set_1_LoadingControl_ErrorText;
                 break;
-            case "XamlControlLibrary.LoadingControl.ErrorSubText":
-                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+            case "BaseLogic.Xaml_Controls.LoadingControl.ErrorSubText":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaseLogic.Xaml_Controls.LoadingControl");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ErrorSubText", "String");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_2_LoadingControl_ErrorSubText;
                 xamlMember.Setter = set_2_LoadingControl_ErrorSubText;
                 break;
-            case "XamlControlLibrary.LoadingControl.LoadingText":
-                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+            case "BaseLogic.Xaml_Controls.LoadingControl.LoadingText":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaseLogic.Xaml_Controls.LoadingControl");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "LoadingText", "String");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_3_LoadingControl_LoadingText;
                 xamlMember.Setter = set_3_LoadingControl_LoadingText;
                 break;
-            case "XamlControlLibrary.LoadingControl.ControlVisibility":
-                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+            case "BaseLogic.Xaml_Controls.LoadingControl.ControlVisibility":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaseLogic.Xaml_Controls.LoadingControl");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ControlVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_4_LoadingControl_ControlVisibility;
                 xamlMember.Setter = set_4_LoadingControl_ControlVisibility;
                 break;
-            case "XamlControlLibrary.LoadingControl.ErrorTextVisibility":
-                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XamlControlLibrary.LoadingControl");
+            case "BaseLogic.Xaml_Controls.LoadingControl.ErrorTextVisibility":
+                userType = (global::_112Friesland._12Friesland_XamlTypeInfo.XamlUserType)GetXamlTypeByName("BaseLogic.Xaml_Controls.LoadingControl");
                 xamlMember = new global::_112Friesland._12Friesland_XamlTypeInfo.XamlMember(this, "ErrorTextVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_5_LoadingControl_ErrorTextVisibility;

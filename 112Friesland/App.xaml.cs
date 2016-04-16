@@ -1,9 +1,11 @@
 ﻿using _112Friesland.Common;
+using BaseLogic.ExceptionHandler;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -27,6 +29,13 @@ namespace _112Friesland
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            UnhandledException += App_UnhandledException;
+        }
+
+        void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            e.Handled = true;
+            Task t = ExceptionHandler.instance.PostException(new AppException(e.Exception), (int)BaseLogic.ClientIDHandler.ClientIDHandler.AppName._112Fryslân);
         }
 
         protected override async void OnLaunched(LaunchActivatedEventArgs e)

@@ -3,6 +3,9 @@ using _112FrieslandBackgroundW;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
 using BaseLogic;
+using BaseLogic.ArticleCounter;
+using BaseLogic.ClientIDHandler;
+using BaseLogic.Notifications;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -111,8 +114,8 @@ namespace _112Friesland
                 NewsItemLoadingControl.SetLoadingStatus(false);
             }
 
-            ArticleCounter.AddArticleCount();
-            Task t = Task.Run(() => DataHandler.GetDataFromURL("http://speedydown-001-site2.smarterasp.net/api.ashx?Fryslan=" + URL));
+            await ArticleCounter.AddArticleCount("Wij bieden 112Fryslân kostenloos aan en we zouden het op prijs stellen als u de 112Fryslân app een positieve review geeft.", "Bedankt");
+            Task t = Task.Run(() => ClientIDHandler.instance.PostAppStats(ClientIDHandler.AppName._112Fryslân));
         }
 
         private async Task<IList<NewsLink>> GetNewsLinksOperationAsTask()

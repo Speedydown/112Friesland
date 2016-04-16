@@ -365,12 +365,11 @@
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>52891Speedydown.112Groningen</MainPackageIdentityName>
-    <MainPackageIdentityName>52891Speedydown.30Seconds</MainPackageIdentityName>
+    <MainPackageIdentityName>52891Speedydown.30000MilliSeconds</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.BekendeNederlanders</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.CardMarket</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.DirtySeconds</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.HVZeeland</MainPackageIdentityName>
-    <MainPackageIdentityName>52891Speedydown.Joop</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.leftovers</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.MixMarathon</MainPackageIdentityName>
     <MainPackageIdentityName>52891Speedydown.NetworkPlayer</MainPackageIdentityName>
@@ -384,13 +383,23 @@
     <BundleInfo>
       <PackageInfo>
         <OsMinVersion>6.3.0.0</OsMinVersion>
-        <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.0.14</PackageMaxArchitectureVersion>
+        <PackageArchitecture>X86</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.16</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>X64</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.16</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>Arm</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.16</PackageMaxArchitectureVersion>
       </PackageInfo>
       <PackageInfo>
         <OsMinVersion>6.3.0.0</OsMinVersion>
         <PackageArchitecture>Neutral</PackageArchitecture>
-        <PackageMaxArchitectureVersion>1.1.0.14</PackageMaxArchitectureVersion>
+        <PackageMaxArchitectureVersion>1.1.0.16</PackageMaxArchitectureVersion>
       </PackageInfo>
     </BundleInfo>
   </PackageInfoList>

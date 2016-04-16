@@ -1,13 +1,7 @@
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\112FrieslandLogic.dll
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\112FrieslandLogic.pdb
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\112FrieslandLogic.pri
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\WebCrawlerTools.dll
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\XamlControlLibrary.dll
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\Newtonsoft.Json.dll
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\WebCrawlerTools.pdb
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\WebCrawlerTools.pri
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\XamlControlLibrary.pdb
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\XamlControlLibrary.pri
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\Newtonsoft.Json.xml
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\112FrieslandLogic.csprojResolveAssemblyReference.cache
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\112FrieslandLogic.dll
@@ -23,3 +17,8 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\p
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\qualifiers.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\BaseLogic.dll
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\SQLite.Net.dll
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\SQLite.Net.Platform.WinRT.dll
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\BaseLogic.pdb
+C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\BaseLogic.pri

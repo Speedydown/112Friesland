@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI;
-using WebCrawlerTools;
-using XamlControlLibrary.Interfaces;
+using BaseLogic.Xaml_Controls.Interfaces;
+using BaseLogic.HtmlUtil;
 
 namespace _112FrieslandLogic.Data
 {

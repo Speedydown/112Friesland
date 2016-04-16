@@ -5,7 +5,7 @@
     xmlns:local="using:_112Friesland"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:CLib="using:XamlControlLibrary"
+    xmlns:CLib="using:BaseLogic.Xaml_Controls"
     mc:Ignorable="d"
     Background="LightGray">
 
@@ -37,7 +37,7 @@
     </Grid>
 
     <Page.BottomAppBar>
-        <CommandBar Background="LightGray" Foreground="Black">
+        <CommandBar Background="LightGray" Foreground="Black" ClosedDisplayMode="Minimal">
             <AppBarButton x:Uid="_112FryslanButton" x:Name="_112FryslanButton" Label="112Fryslân" Icon="World" Click="_112FryslanButton_Click" />
             <CommandBar.SecondaryCommands>
                 <AppBarButton x:Uid="PrivacyPolicyButton" x:Name="PrivacyPolicyButton" Label="Privacy policy"  Click="PrivacyPolicyButton_Click"/>

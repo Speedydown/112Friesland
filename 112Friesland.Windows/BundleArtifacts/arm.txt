@@ -1,3 +1,3 @@
-MainPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\ARM\Release\112Friesland.Windows_1.1.0.16_Bundle\112Friesland.Windows_1.1.0.16_ARM.appx
-SymbolPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\AppPackages\112Friesland.Windows_1.1.0.16_Test\112Friesland.Windows_1.1.0.16_ARM.appxsym
-ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\ARM\Release\112Friesland.Windows_1.1.0.16_Bundle\112Friesland.Windows_1.1.0.16_scale-180.appx
+MainPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\ARM\Release\112Friesland.Windows_1.1.0.17_Bundle\112Friesland.Windows_1.1.0.17_ARM.appx
+SymbolPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\AppPackages\112Friesland.Windows_1.1.0.17_Test\112Friesland.Windows_1.1.0.17_ARM.appxsym
+ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\ARM\Release\112Friesland.Windows_1.1.0.17_Bundle\112Friesland.Windows_1.1.0.17_scale-180.appx

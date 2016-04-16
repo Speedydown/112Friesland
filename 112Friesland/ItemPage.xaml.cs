@@ -1,6 +1,8 @@
 ﻿using _112Friesland.Common;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
+using BaseLogic.ArticleCounter;
+using BaseLogic.ClientIDHandler;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -94,11 +96,11 @@ namespace _112Friesland
                 LoadingControl.SetLoadingStatus(false);
             }
 
-            ArticleCounter.AddArticleCount();
+            await ArticleCounter.AddArticleCount("Wij bieden 112Fryslân kostenloos aan en we zouden het op prijs stellen als u de 112Fryslân app een positieve review geeft.", "Bedankt");
 
             if (e.NavigationParameter != null)
             {
-                Task t = Task.Run(() => DataHandler.GetDataFromURL("http://speedydown-001-site2.smarterasp.net/api.ashx?Fryslan=" + (string)e.NavigationParameter));
+                Task t = Task.Run(() => ClientIDHandler.instance.PostAppStats(ClientIDHandler.AppName._112Fryslân));
             }
         }
 

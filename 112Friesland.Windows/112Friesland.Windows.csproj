@@ -108,13 +108,9 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="..\..\Speedydown.nl-API\BaseLogic\BaseLogic.csproj">
+    <ProjectReference Include="..\..\win10apps.nl\BaseLogic\BaseLogic.csproj">
       <Project>{ee050c83-148e-4402-b25c-bc667d855965}</Project>
       <Name>BaseLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Speedydown.nl-API\XamlControlLibrary\XamlControlLibrary.csproj">
-      <Project>{09f3efe7-ac3c-4189-90f1-c7bf9e01af96}</Project>
-      <Name>XamlControlLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\112FrieslandLogic\112FrieslandLogic.csproj">
       <Project>{b01b83cb-cc6f-40d5-92eb-f596564c0284}</Project>
@@ -194,8 +190,8 @@
     <SDKReference Include="MSAdvertisingXaml, Version=8.1">
       <Name>Microsoft Advertising SDK for Windows 8.1 %28Xaml%29</Name>
     </SDKReference>
-    <SDKReference Include="SQLite.WinRT81, Version=3.9.2">
-      <Name>SQLite for Windows Runtime %28Windows 8.1%29</Name>
+    <SDKReference Include="SQLite.WinRT81, Version=3.12.1">
+      <Name>SQLite for Windows Runtime %28Windows 8.1%291</Name>
     </SDKReference>
   </ItemGroup>
   <ItemGroup>

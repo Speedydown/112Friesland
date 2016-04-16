@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="52891Speedydown.112Frysln" Publisher="CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE" Version="1.1.0.16" ProcessorArchitecture="arm" />
+  <Identity Name="52891Speedydown.112Frysln" Publisher="CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE" Version="1.1.0.17" ProcessorArchitecture="arm" />
   <Properties>
     <DisplayName>112Fryslân</DisplayName>
     <PublisherDisplayName>Speedydown</PublisherDisplayName>
@@ -48,17 +48,17 @@
       <InProcessServer>
         <Path>CLRHost.dll</Path>
         <ActivatableClass ActivatableClassId="_112FrieslandBackgroundW.BackgroundTask" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.AdControl" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.XamlAdControl_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.AdControl" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.AdSettingsFlyout" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.Advertisement" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.AdPlacement" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.UserInfoProvider" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.RendererOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.JSONWrapper" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.AdErrorEventArgs" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.SdkInfoProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.Advertisement" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.RendererOptions" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.AdEventArgs" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.JSONWrapper" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.AdPlacement" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="MicrosoftAdvertising.Shared.WinRT.UserInfoProvider" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
@@ -73,7 +73,7 @@
     <build:Item Name="ProjectGUID" Value="{25D6912F-E0B6-4EB7-A349-D7FB7A4C796F}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
     <build:Item Name="MSAdvertisingXaml" Version="8.1" />
-    <build:Item Name="SQLite.WinRT81" Version="3.9.2" />
+    <build:Item Name="SQLite.WinRT81" Version="3.12.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>

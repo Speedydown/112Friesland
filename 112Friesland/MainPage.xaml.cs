@@ -3,6 +3,7 @@ using _112FrieslandBackgroundWP;
 using _112FrieslandLogic;
 using _112FrieslandLogic.Data;
 using BaseLogic;
+using BaseLogic.Notifications;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -56,9 +57,10 @@ namespace _112Friesland
             get { return this.defaultViewModel; }
         }
 
-        private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             this.LoadData();
+            await StatusBar.GetForCurrentView().HideAsync();
         }
 
         private async Task<List<NewsLink>> GetNewsLinksByPageAsTask(int PageNumber)

@@ -22,7 +22,7 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\112FrieslandLogic.dll">
       <PackagePath>112FrieslandLogic.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\BaseLogic\bin\ARM\Release\BaseLogic.dll">
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\BaseLogic.dll">
       <PackagePath>BaseLogic.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
@@ -31,14 +31,8 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\packages\SQLite.Net-PCL.3.1.1\lib\portable-win81+wpa81\SQLite.Net.Platform.WinRT.dll">
       <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\XamlControlLibrary.dll">
-      <PackagePath>XamlControlLibrary.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\WebCrawlerTools.dll">
-      <PackagePath>WebCrawlerTools.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLitePCL.raw_basic.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll">
       <PackagePath>SQLitePCL.raw.dll</PackagePath>
@@ -46,7 +40,7 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\_112FrieslandBackgroundWP.winmd">
       <PackagePath>_112FrieslandBackgroundWP.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.9.2\Redist\Retail\ARM\sqlite3.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.12.1\Redist\Retail\ARM\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-100.png">
@@ -151,23 +145,23 @@
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\DisplayNewsItemControlWideScreen.xbf">
-      <PackagePath>XamlControlLibrary\DisplayNewsItemControlWideScreen.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\DisplayNewsItemControl.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\DisplayNewsItemControl.xbf">
-      <PackagePath>XamlControlLibrary\DisplayNewsItemControl.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\DisplayNewsItemControlWideScreen.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\LoadingControl.xbf">
-      <PackagePath>XamlControlLibrary\LoadingControl.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\LoadingControl.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\LoadingControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\SettingsControl.xbf">
-      <PackagePath>XamlControlLibrary\SettingsControl.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\SettingsControl.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\SettingsControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\112Friesland.xr.xml">
       <PackagePath>112Friesland.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\XamlControlLibrary\bin\ARM\Release\XamlControlLibrary.xr.xml">
-      <PackagePath>XamlControlLibrary\XamlControlLibrary.xr.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\BaseLogic.xr.xml">
+      <PackagePath>BaseLogic\BaseLogic.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
