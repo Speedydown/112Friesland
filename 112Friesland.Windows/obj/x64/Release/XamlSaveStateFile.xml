@@ -5,7 +5,7 @@
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoftadvertising.winmd" HashGuid="0dde57b7-8c99-5b9a-0771-4cdcca925c59" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
     <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\112frieslandlogic\bin\x64\release\112frieslandlogic.dll" HashGuid="f32e2ce5-bf71-4089-bc62-d4813c9bba7d" />
-    <ReferenceAssembly PathName="c:\users\teake\documents\github\win10apps.nl\baselogic\bin\x64\release\baselogic.dll" HashGuid="b67cf622-9c98-0049-f9ee-5f026319d895" />
+    <ReferenceAssembly PathName="c:\users\teake\documents\github\win10apps.nl\baselogic\bin\x64\release\baselogic.dll" HashGuid="c471b97a-769c-45f5-ca70-f1555dea9289" />
     <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\packages\sqlite.net.core-pcl.3.1.1\lib\portable-win8+net45+wp8+wpa81+monoandroid1+monotouch1\sqlite.net.dll" HashGuid="2223cbf7-68d4-e5e4-e5e4-a19696ad83b6" />
     <ReferenceAssembly PathName="c:\users\teake\documents\github\speedydown.nl-api\packages\sqlite.net-pcl.3.1.1\lib\windows8\sqlite.net.platform.winrt.dll" HashGuid="1bc7eaa0-e36a-f105-20d8-c57b14216cea" />
     <ReferenceAssembly PathName="c:\users\teake\documents\github\112friesland\_112frieslandbackgroundw\bin\x64\release\_112frieslandbackgroundw.winmd" HashGuid="4b2b629b-cee3-00d5-783e-ae4989924628" />
