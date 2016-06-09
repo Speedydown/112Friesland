@@ -1,169 +1,171 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SPEEDYTOPV2</Machine>
-    <WindowsUser>Teake</WindowsUser>
+    <Machine>SPEEDY</Machine>
+    <WindowsUser>speed</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Release|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>42dadd9d-92a4-4fb7-803a-6049eb58afe8</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\obj\ARM\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\obj\ARM\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\112Friesland.exe">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\112Friesland.exe">
       <PackagePath>112Friesland.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\112FrieslandLogic.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\112FrieslandLogic.dll">
       <PackagePath>112FrieslandLogic.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\BaseLogic.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\BaseLogic.dll">
       <PackagePath>BaseLogic.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
-      <PackagePath>SQLite.Net.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Speedydown.nl-API\packages\SQLite.Net-PCL.3.1.1\lib\portable-win81+wpa81\SQLite.Net.Platform.WinRT.dll">
-      <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLitePCL.raw_basic.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLite.Net-PCL.3.1.1\lib\portable-win81+wpa81\SQLite.Net.Platform.WinRT.dll">
+      <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLitePCL.raw_basic.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll">
       <PackagePath>SQLitePCL.raw.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\_112FrieslandBackgroundWP.winmd">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\_112FrieslandBackgroundWP.winmd">
       <PackagePath>_112FrieslandBackgroundWP.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.12.1\Redist\Retail\ARM\sqlite3.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.12.2\Redist\Retail\ARM\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-140.png">
       <PackagePath>Assets\BadgeLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-240.png">
       <PackagePath>Assets\BadgeLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Banner.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Banner.png">
       <PackagePath>Assets\Banner.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Logo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Logo.scale-140.png">
       <PackagePath>Assets\Logo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\SmallLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\SmallLogo.scale-140.png">
       <PackagePath>Assets\SmallLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\SplashScreen.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\SplashScreen.scale-140.png">
       <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Square71x71Logo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Square71x71Logo.scale-140.png">
       <PackagePath>Assets\Square71x71Logo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\StoreLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\StoreLogo.scale-140.png">
       <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\WideLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\WideLogo.scale-100.png">
       <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\WideLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\WideLogo.scale-140.png">
       <PackagePath>Assets\WideLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Shared\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Shared\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\Styles\112FryslanDictionary.xbf">
-      <PackagePath>Styles\112FryslanDictionary.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\ItemPage.xbf">
-      <PackagePath>ItemPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\DisplayNewsItemControl.xbf">
-      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\DisplayNewsItemControlWideScreen.xbf">
-      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\LoadingControl.xbf">
-      <PackagePath>BaseLogic\Xaml Controls\LoadingControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\SettingsControl.xbf">
-      <PackagePath>BaseLogic\Xaml Controls\SettingsControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\112Friesland.xr.xml">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\112Friesland.xr.xml">
       <PackagePath>112Friesland.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\BaseLogic.xr.xml">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\BaseLogic.xr.xml">
       <PackagePath>BaseLogic\BaseLogic.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\Styles\112FryslanDictionary.xbf">
+      <PackagePath>Styles\112FryslanDictionary.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\DisplayNewsItemControl.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\DisplayNewsItemControlWideScreen.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\LoadingControl.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\LoadingControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\ARM\Release\Xaml Controls\SettingsControl.xbf">
+      <PackagePath>BaseLogic\Xaml Controls\SettingsControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\ARM\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

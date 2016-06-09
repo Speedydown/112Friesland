@@ -1,0 +1,7 @@
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\_112FrieslandBackgroundWP.csproj;neutral
+C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\112Friesland.csproj;x86
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;x86
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;x86
+C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\BaseLogic.csproj;x86
+C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\BaseLogic.csproj;x86
+C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\BaseLogic.csproj;x86

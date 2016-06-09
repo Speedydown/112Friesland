@@ -34,8 +34,9 @@ namespace _112FrieslandLogic.Data
         private static readonly string[] Paragraphs = new string[] { "<p>", "<p class=\"western\">", "<p class=\"introductie\">" };
         private static readonly string[] Content = new string[] { "<p>", "<p style=\"text-align: left;\">", "<p class=\"western\">", "<p class=\"introductie\">" };
 
-        private async static Task<NewsPage> GetNewsPageFromHTML(string Source)
+        private async static Task<NewsPage> GetNewsPageFromHTML(string OriginalSource)
         {
+            string Source = OriginalSource;
             Task<List<string>> ImageTask = Task.Run(() => GetImagesFromSource(Source));
 
             string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
@@ -134,7 +135,7 @@ namespace _112FrieslandLogic.Data
 
 
             //string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);
-            Source = Source.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource("rel=\"author\">", Source, false));
+            Source = OriginalSource.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource("rel=\"author\">", OriginalSource, false));
             string Author = HTMLParserUtil.GetContentAndSubstringInput("rel=\"author\">", "</a></u>", Source, out Source);
 
             List<string> Images = await ImageTask;
