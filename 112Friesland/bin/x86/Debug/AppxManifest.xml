@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="52891Speedydown.112Frysln" Publisher="CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE" Version="2016.416.1246.0" ProcessorArchitecture="x86" />
+  <Identity Name="52891Speedydown.112Frysln" Publisher="CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE" Version="2016.609.1956.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="42dadd9d-92a4-4fb7-803a-6049eb58afe8" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>112Fryslân</DisplayName>
@@ -53,17 +53,17 @@
       <InProcessServer>
         <Path>CLRHost.dll</Path>
         <ActivatableClass ActivatableClassId="_112FrieslandBackgroundWP.BackgroundTask" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.TileXmlHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.NotificationHandler" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="WRCHelperLibrary.BadgeHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.Settings.SettingsContainer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WRCHelperLibrary.NotificationHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WRCHelperLibrary.TileXmlHandler" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="WRCHelperLibrary.Settings.ToggleSwitchSetting" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.DataHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.NotificationDataHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="WRCHelperLibrary.Settings.SettingsContainer" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="_112FrieslandLogic.ToastHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsLinkParser" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsLink" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsPage" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsLinkParser" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="_112FrieslandLogic.NotificationDataHandler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="_112FrieslandLogic.DataHandler" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
@@ -74,7 +74,7 @@
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.10586.0 (th2_release.151029-1700)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25123.0" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25425.1" />
     <build:Item Name="ProjectGUID" Value="{053BCA07-B8F2-4668-93C8-17FCF9760A10}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
     <build:Item Name="SQLite.WP81" Version="3.12.2" />

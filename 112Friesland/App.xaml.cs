@@ -35,7 +35,7 @@ namespace _112Friesland
         void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             e.Handled = true;
-            Task t = ExceptionHandler.instance.PostException(new AppException(e.Exception), (int)BaseLogic.ClientIDHandler.ClientIDHandler.AppName._112Fryslân);
+            Task t = ExceptionHandler.instance.PostException(new AppException(e.Exception, (int)BaseLogic.ClientIDHandler.ClientIDHandler.AppName._112Fryslân));
         }
 
         protected override async void OnLaunched(LaunchActivatedEventArgs e)

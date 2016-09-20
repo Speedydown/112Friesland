@@ -65,3 +65,7 @@ C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\obj\x86\Debug\WRCHelpe
 C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\obj\x86\Debug\_112FrieslandLogic.pri.xml
 C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\obj\x86\Debug\WebCrawlerTools.pri.xml
 C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\Plugin.Settings.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\Plugin.Settings.xml
+C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\Plugin.Settings.Abstractions.xml

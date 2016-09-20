@@ -12,7 +12,7 @@ namespace _112FrieslandLogic.Data
         public static IList<NewsLink> GetNewsLinksFromSource(string Source)
         {
             //Remove unusable HeaderData
-            Source = RemoveHeader(Source, "<ul class=\"recent__icons\">");
+            Source = RemoveHeader(Source, "class=\"recent__header\"");
 
             //Parse Items
             return ParseContent(Source);
@@ -42,7 +42,7 @@ namespace _112FrieslandLogic.Data
 
                 try
                 {
-                    NewsLinksAsHTML.Add(HTMLParserUtil.GetContentAndSubstringInput("<ul class=\"recent__icons\">", "<div class=\"recent__details group\">", Input, out Input, "<div class=\"pagination group\">", true));
+                    NewsLinksAsHTML.Add(HTMLParserUtil.GetContentAndSubstringInput("class=\"recent__header\">", "<figure class=\"recent__figure\">", Input, out Input, "<div class=\"pagination group\">", true));
                 }
                 catch
                 {

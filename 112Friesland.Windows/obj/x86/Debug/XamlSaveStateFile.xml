@@ -2,7 +2,7 @@
   <ReferenceAssemblyList>
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
     <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112frieslandlogic\bin\x86\debug\112frieslandlogic.dll" HashGuid="33adde85-b6bf-7172-61eb-b1158a2ed159" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\baselogic\bin\x86\debug\baselogic.dll" HashGuid="59911da3-3095-84f8-e429-7ad631ba4894" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\baselogic\bin\x86\debug\baselogic.dll" HashGuid="91ded98d-3a04-4226-6d78-7c71e1167c04" />
     <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\_112frieslandbackgroundw\bin\debug\_112frieslandbackgroundw.winmd" HashGuid="4b2b629b-cee3-00d5-783e-ae4989924628" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>
