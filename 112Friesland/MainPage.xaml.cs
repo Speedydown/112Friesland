@@ -87,8 +87,8 @@ namespace _112Friesland
                 {
                     Task[] PageTask = new Task[] {
                         Task.Run(() => GetNewsLinksByPageAsTask(1)),
-                        Task.Run(() => GetNewsLinksByPageAsTask(2)),
-                        Task.Run(() => GetNewsLinksByPageAsTask(3))
+                    //    Task.Run(() => GetNewsLinksByPageAsTask(2)),
+                      //  Task.Run(() => GetNewsLinksByPageAsTask(3))
                     };
 
                     await Task.Run(() =>Task.WaitAll(PageTask));
