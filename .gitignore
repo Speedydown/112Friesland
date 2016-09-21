@@ -1,0 +1,61 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/112Friesland/AppPackages
+/112Friesland/bin
+/112Friesland/BundleArtifacts
+/112Friesland/obj
+/112Friesland/112Friesland.v12.suo
+/112Friesland/112Friesland.csproj.user
+/112Friesland.Windows/AppPackages
+/112Friesland.Windows/bin
+/112Friesland.Windows/BundleArtifacts
+/112Friesland.Windows/obj
+/112Friesland.Windows/112Friesland.Windows.csproj.user
+/112FrieslandLogic/bin
+/112FrieslandLogic/obj
+/packages
+/_112FrieslandBackgroundW/bin
+/_112FrieslandBackgroundW/obj
+/_112FrieslandBackgroundWP/bin
+/_112FrieslandBackgroundWP/obj
