@@ -74,9 +74,19 @@
 					</Candidate>
 				</NamedResource>
 				<ResourceMapSubtree name="Xaml Controls">
+					<NamedResource name="DisplayNewsItemControl.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControl.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
 					<NamedResource name="DisplayNewsItemControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControl.xbf">
 						<Candidate type="Path">
 							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DisplayNewsItemControlWideScreen.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControlWideScreen.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xaml</Value>
 						</Candidate>
 					</NamedResource>
 					<NamedResource name="DisplayNewsItemControlWideScreen.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControlWideScreen.xbf">
@@ -84,9 +94,19 @@
 							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf</Value>
 						</Candidate>
 					</NamedResource>
+					<NamedResource name="LoadingControl.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/LoadingControl.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\LoadingControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
 					<NamedResource name="LoadingControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/LoadingControl.xbf">
 						<Candidate type="Path">
 							<Value>BaseLogic\Xaml Controls\LoadingControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="SettingsControl.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/SettingsControl.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\SettingsControl.xaml</Value>
 						</Candidate>
 					</NamedResource>
 					<NamedResource name="SettingsControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/SettingsControl.xbf">

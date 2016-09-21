@@ -1,6 +1,6 @@
 ﻿[ResourceMetadata]
 "ResourceId"			"split.language-pl"
-"ResourceDimensions"		"language-pl"
+"ResourceDimensions"		"language-pl-pl"
 
 [Files]
-"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x86\Release\split.language-pl.pri"			"resources.pri"
+"C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x86\Release\split.language-pl.pri"			"resources.pri"

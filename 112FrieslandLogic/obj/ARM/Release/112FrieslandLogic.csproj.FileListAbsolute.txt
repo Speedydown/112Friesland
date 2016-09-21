@@ -46,3 +46,7 @@ C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\p
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\qualifiers.txt
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\Plugin.Settings.Abstractions.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\Plugin.Settings.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\Plugin.Settings.xml
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\ARM\Release\Plugin.Settings.Abstractions.xml

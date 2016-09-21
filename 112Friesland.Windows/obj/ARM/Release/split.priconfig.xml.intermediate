@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\ARM\Release\resources.pri">
+  <index root="\" startIndexAt="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\bin\ARM\Release\resources.pri">
     <default>
       <qualifier name="Language" value="nl-NL" />
       <qualifier name="Contrast" value="standard" />

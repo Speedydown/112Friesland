@@ -1,7 +1,6 @@
 ﻿[ResourceMetadata]
 "ResourceId"			"split.language-ko"
 "ResourceDimensions"		"language-ko-kr"
-"ResourceDimensions"		"language-ko"
 
 [Files]
-"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x86\Release\split.language-ko.pri"			"resources.pri"
+"C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x86\Release\split.language-ko.pri"			"resources.pri"

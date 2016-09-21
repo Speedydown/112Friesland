@@ -4,4 +4,4 @@
 "ResourceDimensions"		"language-pt-br"
 
 [Files]
-"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x86\Release\split.language-pt.pri"			"resources.pri"
+"C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x86\Release\split.language-pt.pri"			"resources.pri"

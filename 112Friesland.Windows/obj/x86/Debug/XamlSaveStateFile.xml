@@ -1,11 +1,15 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.admediatorwindows81\1.0\references\commonconfiguration\neutral\microsoft.admediator.core.dll" HashGuid="fec80444-027d-4507-d948-53e28c9c373e" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.admediatorwindows81\1.0\references\commonconfiguration\neutral\microsoft.admediator.windows81.dll" HashGuid="c796081a-7afe-1f1c-50b2-389bda6c4ab0" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.admediatorwindows81\1.0\references\commonconfiguration\x86\microsoft.admediator.windows81.microsoftadvertising.dll" HashGuid="7106d663-e0dc-735f-a6f3-bb5e1ae07749" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.admediatorwindows81\1.0\references\commonconfiguration\neutral\microsoft.advertising.winmd" HashGuid="5d317180-a2af-0ed5-da6b-6aeef242709a" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112frieslandlogic\bin\x86\debug\112frieslandlogic.dll" HashGuid="62e4f18e-b938-0576-3cd7-cfb498255628" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\win10apps.baselogic.1.0.3\lib\baselogic.dll" HashGuid="2fb9e39b-6e0b-f996-dd5e-3f9411cae082" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\xam.plugins.settings.2.1.0\lib\win8\plugin.settings.abstractions.dll" HashGuid="2b0e2d63-0984-03e6-e1dc-77d16c51778c" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\xam.plugins.settings.2.1.0\lib\win8\plugin.settings.dll" HashGuid="26f3d346-7a59-3cd8-0ef4-1467b0f8acfc" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\_112frieslandbackgroundw\bin\x86\debug\_112frieslandbackgroundw.winmd" HashGuid="1115685d-5612-4ed7-e2dc-72a89f75ad5d" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\packages\win10apps.baselogic.1.0.3\lib\baselogic.dll" HashGuid="2fb9e39b-6e0b-f996-dd5e-3f9411cae082" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112friesland.windows\bin\x86\debug\plugin.settings.abstractions.dll" HashGuid="2b0e2d63-0984-03e6-e1dc-77d16c51778c" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112friesland.windows\bin\x86\debug\plugin.settings.dll" HashGuid="a18bed2b-0275-cca7-9572-a50ae2a97cfe" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\packages\sqlite.net.core-pcl.3.1.1\lib\portable-win8+net45+wp8+wpa81+monoandroid1+monotouch1\sqlite.net.dll" HashGuid="2223cbf7-68d4-e5e4-e5e4-a19696ad83b6" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\packages\sqlite.net-pcl.3.1.1\lib\windows8\sqlite.net.platform.winrt.dll" HashGuid="1bc7eaa0-e36a-f105-20d8-c57b14216cea" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

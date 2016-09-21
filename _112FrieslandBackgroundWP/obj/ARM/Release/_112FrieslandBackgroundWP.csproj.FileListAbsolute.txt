@@ -56,3 +56,7 @@ C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\ARM\R
 C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\ARM\Release\qualifiers.txt
 C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\Plugin.Settings.Abstractions.dll
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\Plugin.Settings.dll
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\Plugin.Settings.xml
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\ARM\Release\Plugin.Settings.Abstractions.xml

@@ -1,7 +1,4 @@
-C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\_112FrieslandBackgroundW.csproj;x64
-C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\112Friesland.Windows.csproj;x64
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;x64
-C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;x64
-C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\BaseLogic.csproj;x64
-C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\BaseLogic.csproj;x64
-C:\Users\Teake\Documents\GitHub\win10apps.nl\BaseLogic\BaseLogic.csproj;x64
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundW\_112FrieslandBackgroundW.csproj;x64
+C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\112Friesland.Windows.csproj;x64
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;x64
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;x64

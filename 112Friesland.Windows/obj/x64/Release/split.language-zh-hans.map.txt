@@ -3,4 +3,4 @@
 "ResourceDimensions"		"language-zh-cn"
 
 [Files]
-"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x64\Release\split.language-zh-hans.pri"			"resources.pri"
+"C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x64\Release\split.language-zh-hans.pri"			"resources.pri"

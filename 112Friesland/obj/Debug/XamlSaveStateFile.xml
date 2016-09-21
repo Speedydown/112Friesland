@@ -1,6 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\teake\documents\github\112friesland\112friesland\obj\debug\intermediatexaml\112friesland.exe" HashGuid="88bd9fdb-930f-57de-1832-5d9fa929ee85" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\_112frieslandbackgroundwp\bin\debug\_112frieslandbackgroundwp.winmd" HashGuid="1fb80e15-d149-166a-ad1a-14dced553662" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112frieslandlogic\bin\debug\112frieslandlogic.dll" HashGuid="62e4f18e-b938-0576-3cd7-cfb498255628" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\_112frieslandbackgroundwp\bin\debug\_112frieslandbackgroundwp.winmd" HashGuid="32c38e40-d7ff-b5c2-e827-b2bfbc363020" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

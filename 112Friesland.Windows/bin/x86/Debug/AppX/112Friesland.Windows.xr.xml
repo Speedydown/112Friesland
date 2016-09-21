@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots >
+<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="AuthorDate" />
     <RootPropertyPathName Name="Content" />
@@ -77,8 +77,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
-    <RootType FullName="XamlControlLibrary.DisplayNewsItemControlWideScreen" />
-    <RootType FullName="XamlControlLibrary.LoadingControl">
+    <RootType FullName="BaseLogic.Xaml_Controls.DisplayNewsItemControlWideScreen" />
+    <RootType FullName="BaseLogic.Xaml_Controls.LoadingControl">
       <RootProperty Name="TextColor" />
       <RootProperty Name="ErrorText" />
       <RootProperty Name="ErrorSubText" />

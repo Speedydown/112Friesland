@@ -84,9 +84,19 @@
 					</Candidate>
 				</NamedResource>
 				<ResourceMapSubtree name="Xaml Controls">
+					<NamedResource name="DisplayNewsItemControl.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControl.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
 					<NamedResource name="DisplayNewsItemControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControl.xbf">
 						<Candidate type="Path">
 							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DisplayNewsItemControlWideScreen.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControlWideScreen.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xaml</Value>
 						</Candidate>
 					</NamedResource>
 					<NamedResource name="DisplayNewsItemControlWideScreen.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/DisplayNewsItemControlWideScreen.xbf">
@@ -94,9 +104,19 @@
 							<Value>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf</Value>
 						</Candidate>
 					</NamedResource>
+					<NamedResource name="LoadingControl.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/LoadingControl.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\LoadingControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
 					<NamedResource name="LoadingControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/LoadingControl.xbf">
 						<Candidate type="Path">
 							<Value>BaseLogic\Xaml Controls\LoadingControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="SettingsControl.xaml" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/SettingsControl.xaml">
+						<Candidate type="Path">
+							<Value>BaseLogic\Xaml Controls\SettingsControl.xaml</Value>
 						</Candidate>
 					</NamedResource>
 					<NamedResource name="SettingsControl.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/BaseLogic/Xaml%20Controls/SettingsControl.xbf">
@@ -120,40 +140,60 @@
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
-			<ResourceMapSubtree name="Microsoft.Advertising.WinRT.UI">
-				<NamedResource name="AdSettingsFlyout.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising.WinRT.UI/AdSettingsFlyout.xbf">
+			<ResourceMapSubtree name="Microsoft.AdMediator.Windows81">
+				<NamedResource name="Microsoft.AdMediator.Windows81.xr.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.AdMediator.Windows81/Microsoft.AdMediator.Windows81.xr.xml">
 					<Candidate type="Path">
-						<Value>Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="bootstrap.html" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising.WinRT.UI/bootstrap.html">
-					<Candidate type="Path">
-						<Value>Microsoft.Advertising.WinRT.UI\bootstrap.html</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ormma.js" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising.WinRT.UI/ormma.js">
-					<Candidate type="Path">
-						<Value>Microsoft.Advertising.WinRT.UI\ormma.js</Value>
+						<Value>Microsoft.AdMediator.Windows81\Microsoft.AdMediator.Windows81.xr.xml</Value>
 					</Candidate>
 				</NamedResource>
 				<ResourceMapSubtree name="Themes">
-					<NamedResource name="Generic.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising.WinRT.UI/Themes/Generic.xbf">
+					<NamedResource name="Generic.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.AdMediator.Windows81/Themes/Generic.xbf">
 						<Candidate type="Path">
-							<Value>Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf</Value>
+							<Value>Microsoft.AdMediator.Windows81\Themes\Generic.xbf</Value>
 						</Candidate>
 					</NamedResource>
 				</ResourceMapSubtree>
 			</ResourceMapSubtree>
-			<ResourceMapSubtree name="MicrosoftAdvertising">
-				<ResourceMapSubtree name="IntelliSense">
-					<NamedResource name="AdErrorEventArgs.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/MicrosoftAdvertising/IntelliSense/AdErrorEventArgs.xml">
-						<Candidate qualifiers="Language-EN-US" isDefault="true" type="Path">
-							<Value>MicrosoftAdvertising\IntelliSense\en-US\AdErrorEventArgs.xml</Value>
-						</Candidate>
-					</NamedResource>
-					<NamedResource name="ErrorCode.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/MicrosoftAdvertising/IntelliSense/ErrorCode.xml">
-						<Candidate qualifiers="Language-EN-US" isDefault="true" type="Path">
-							<Value>MicrosoftAdvertising\IntelliSense\en-US\ErrorCode.xml</Value>
+			<ResourceMapSubtree name="Microsoft.Advertising">
+				<NamedResource name="AdControl.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/AdControl.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\AdControl.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AdErrorEventArgs.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/AdErrorEventArgs.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\AdErrorEventArgs.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="bootstrap.html" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/bootstrap.html">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\bootstrap.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="bootstrap.js" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/bootstrap.js">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\bootstrap.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ErrorCode.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/ErrorCode.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\ErrorCode.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InterstitialAd.xml" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/InterstitialAd.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\InterstitialAd.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ormma.js" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/ormma.js">
+					<Candidate type="Path">
+						<Value>Microsoft.Advertising\ormma.js</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://52891Speedydown.112Frysln/Files/Microsoft.Advertising/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>Microsoft.Advertising\Themes\Generic.xbf</Value>
 						</Candidate>
 					</NamedResource>
 				</ResourceMapSubtree>
@@ -165,469 +205,127 @@
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
+			<ResourceMapSubtree name="_112FrieslandBackgroundW">
+				<NamedResource name="112FrieslandLogic.csproj" uri="ms-resource://52891Speedydown.112Frysln/Files/_112FrieslandBackgroundW/112FrieslandLogic.csproj">
+					<Candidate type="Path">
+						<Value>_112FrieslandBackgroundW\112FrieslandLogic.csproj</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
 		</ResourceMapSubtree>
-		<ResourceMapSubtree name="MicrosoftAdvertising">
+		<ResourceMapSubtree name="Microsoft.Advertising">
 			<ResourceMapSubtree name="ExceptionMessages">
-				<NamedResource name="AdGameComponentAlreadyInitialized" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AdGameComponentAlreadyInitialized">
+				<NamedResource name="ApplicationIdAdUnitIdServiceUrlAreRequired" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/ApplicationIdAdUnitIdServiceUrlAreRequired">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>AdGameComponent has already been initialized.</Value>
+						<Value>You must specify both an ApplicationID and AdUnitID, or a ServiceURL.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="AdGameComponentHasNotBeenInitialized" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AdGameComponentHasNotBeenInitialized">
+				<NamedResource name="AutoRefreshInternalTooLow" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/AutoRefreshInternalTooLow">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>AdGameComponent has not been initialized.</Value>
+						<Value>Auto refresh internal is set too low, default value will be used instead.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="AdManagerNotInitialized" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AdManagerNotInitialized">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>AdManager has not been initialized.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdMangerAlreadyInitialized" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AdMangerAlreadyInitialized">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>AdManager has already been initialized with a different ApplicationId.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdUnitIdAlreadySet" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AdUnitIdAlreadySet">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>AdUnitId has already been set.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdUnitIdIsRequired" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AdUnitIdIsRequired">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>adUnitId is required.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AllActionsMalformed" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AllActionsMalformed">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>All found actions were malformed.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ApplicationIdIsRequired" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ApplicationIdIsRequired">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>applicationId is required.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AssetNodeIsSingleEntry" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AssetNodeIsSingleEntry">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Asset node is a single entry.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AutoRefreshStateAlreadySet" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/AutoRefreshStateAlreadySet">
+				<NamedResource name="AutoRefreshStateAlreadySet" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/AutoRefreshStateAlreadySet">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh state has already been set.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="BannerInformationNotFound" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/BannerInformationNotFound">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Banner information is not found.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="CannotRefreshWhenAdControlUninitialized" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/CannotRefreshWhenAdControlUninitialized">
+				<NamedResource name="CannotRefreshWhenAdControlUninitialized" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CannotRefreshWhenAdControlUninitialized">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh may not be called when AdControl is uninitialised.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="CannotRefreshWhenAdIsEngaged" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/CannotRefreshWhenAdIsEngaged">
+				<NamedResource name="CannotRefreshWhenAdIsEngaged" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CannotRefreshWhenAdIsEngaged">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh may not be called when AdControl is engaged.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="CannotRefreshWhenNotVisible" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/CannotRefreshWhenNotVisible">
+				<NamedResource name="CannotRefreshWhenNotVisible" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CannotRefreshWhenNotVisible">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh may not be called when AdControl is not visible to the user.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="CannotRefreshWhenSuspended" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/CannotRefreshWhenSuspended">
+				<NamedResource name="CannotRefreshWhenSuspended" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CannotRefreshWhenSuspended">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh may not be called when AdControl is suspended.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="CapabilitiesMissing" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/CapabilitiesMissing">
+				<NamedResource name="CapabilitiesMissing" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CapabilitiesMissing">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Required capabilities are missing from manifest ({0}): {1}.</Value>
+						<Value>Required capabilities are missing from manifest (%s): %s.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="ClickToRichUrlWithoutReferralNotWellFormed" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ClickToRichUrlWithoutReferralNotWellFormed">
+				<NamedResource name="CouldNotFindProperty" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CouldNotFindProperty">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Click to rich media url without referral is not well formed: {0}.</Value>
+						<Value>Could not find property: %s.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="ClickToRichUrlWithReferralNotWellFormed" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ClickToRichUrlWithReferralNotWellFormed">
+				<NamedResource name="CountryCodeLengthInvalid" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/CountryCodeLengthInvalid">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Click to rich media url with referral is not well formed: {0}.</Value>
+						<Value>Country/Region length must be equal to %d characters</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="CouldNotFindProperty" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/CouldNotFindProperty">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Could not find property: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="DecodingEscapedCharactersFailed" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/DecodingEscapedCharactersFailed">
+				<NamedResource name="DecodingEscapedCharactersFailed" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/DecodingEscapedCharactersFailed">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Decoding escaped characters failed, more output characters than expected.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="DidNotParseToEnd" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/DidNotParseToEnd">
+				<NamedResource name="HttpRequestFailedWithStatusCode" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/HttpRequestFailedWithStatusCode">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Did not parse until the end.</Value>
+						<Value>HTTP request failed with status code: %d.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="ExtractedPropertyNotAString" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ExtractedPropertyNotAString">
+				<NamedResource name="HttpResponseContainedNoContent" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/HttpResponseContainedNoContent">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Extracted property not of string type: {0}.</Value>
+						<Value>Server response contained no content.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="FontDoesNotSupportCharacter" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/FontDoesNotSupportCharacter">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Font does not support character: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="GeoDataNotAvailable" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/GeoDataNotAvailable">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>No latitude and longitude data available.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="IncompleteInit" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/IncompleteInit">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>ApplicationId and AdUnitId need to be set before using this control.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InternalError" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InternalError">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Internal error encountered.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InvalidAction" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidAction">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Invalid action param: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InvalidDataFormat" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidDataFormat">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Invalid data format: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InvalidJsonResponse" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidJsonResponse">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Invalid JSON response: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InvalidLocation" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidLocation">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>The Location value is out of range.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InvalidParameterMissingItemSeparator" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidParameterMissingItemSeparator">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Invalid Parameter, missing item separator.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="InvalidRefresh" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidRefresh">
+				<NamedResource name="InvalidRefresh" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/InvalidRefresh">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh cannot be used when auto refresh is enabled.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="InvalidSize" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/InvalidSize">
+				<NamedResource name="KeywordLengthInvalid" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/KeywordLengthInvalid">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>The rectangle dimensions do not meet the minimum size requirements ({0}x{1}).</Value>
+						<Value>Keywords length cannot be more than %d characters</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="JsonDoesntStartWithObjectOrArray" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/JsonDoesntStartWithObjectOrArray">
+				<NamedResource name="PostalCodeLengthInvalid" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/PostalCodeLengthInvalid">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Server JSON response does not start with object/array.</Value>
+						<Value>Postal code length cannot be more than %d characters</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="JsonIntegerParseOverflow" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/JsonIntegerParseOverflow">
+				<NamedResource name="RefreshCalledToSoon" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/RefreshCalledToSoon">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Number being parsed is too big: {0}.</Value>
+						<Value>Refresh may not be called more than once every %d seconds.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="JsonNodeIsNotADictionary" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/JsonNodeIsNotADictionary">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Json node is not a dictionary.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="JsonResponseTypeInvalid" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/JsonResponseTypeInvalid">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Invalid JSON response type.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="JsonStringValueNotWellFormed" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/JsonStringValueNotWellFormed">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Json string value not well formed.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="LoadContentNotCalled" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/LoadContentNotCalled">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>LoadContent has not been called before Update/Draw.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="NonPremiumWithNoApplicationId" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/NonPremiumWithNoApplicationId">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Non-premium ads require the manager to be created with a non-null, non-empty applicationID.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ObjectShouldHaveNoElements" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ObjectShouldHaveNoElements">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Object should have no elements yet, but it does.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ParameterIsLessThanPermittedLength" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ParameterIsLessThanPermittedLength">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Parameter is less than permitted length: {0} &lt; {1}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ParameterNullOrEmpty" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ParameterNullOrEmpty">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Parameter is null or empty.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ParseStackNotEmpty" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ParseStackNotEmpty">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Parsing stack not empty, some nodes not parsed completely.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="ParseStringNotANumber" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/ParseStringNotANumber">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Not a valid number to be parsed.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="RectangleHeightNotSufficient" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/RectangleHeightNotSufficient">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Rectangle height not sufficient for a single line of text. Height should be at least: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="RefreshCalledToSoon" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/RefreshCalledToSoon">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Refresh may not be called more than once every {0} seconds.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="RefreshWhileEngaged" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/RefreshWhileEngaged">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Manual refresh not permitted while ad is engaged.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="RefreshWhileRequestInProgress" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/RefreshWhileRequestInProgress">
+				<NamedResource name="RefreshWhileRequestInProgress" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/RefreshWhileRequestInProgress">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>Refresh was triggered but another request is already in progress.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="RequestDataHasNullDataItem" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/RequestDataHasNullDataItem">
+				<NamedResource name="RequestDataHasNullDataItem" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/ExceptionMessages/RequestDataHasNullDataItem">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
 						<Value>httpRequestData or its URL is null.</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="RichMediaInfoNotFound" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/RichMediaInfoNotFound">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Rich media information not found.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="StringContainsInvalidEscapeSequence" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/StringContainsInvalidEscapeSequence">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>String contains invalid escape sequences.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="TextAdTitleNotFound" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/TextAdTitleNotFound">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Mandatory title for text ad not found.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="TooManyImpressionUrls" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/TooManyImpressionUrls">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Number of impression entries exceeds the limit: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="UnableToFitText" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/UnableToFitText">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Unable to fit text in the given space.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="UnicodeCharacterTruncated" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/UnicodeCharacterTruncated">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Unicode character is truncated.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="UnknownAdType" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/UnknownAdType">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Unknown ad type: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="UnknownJsonToken" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/UnknownJsonToken">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Unknown token encountered: {0}.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="UnknownRichMediaMimeType" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/ExceptionMessages/UnknownRichMediaMimeType">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Unknown rich media mime type recieved: {0}.</Value>
-					</Candidate>
-				</NamedResource>
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="UIStrings">
-				<NamedResource name="AdSettings_CommandText" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_CommandText">
+				<NamedResource name="Advertisement" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/UIStrings/Advertisement">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Microsoft Advertising</Value>
+						<Value>Advertisement</Value>
 					</Candidate>
 					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Microsoft Advertising</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Microsoft Advertising</Value>
+						<Value>Advertisement</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_OptedOut_Message1" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_OptedOut_Message1">
+				<NamedResource name="LearnMore" uri="ms-resource://52891Speedydown.112Frysln/Microsoft.Advertising/UIStrings/LearnMore">
 					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>You are currently opted out of personalized advertising from Microsoft. Click</Value>
+						<Value>Learn more</Value>
 					</Candidate>
 					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>You have opted out of personalised advertising from Microsoft. Click </Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Tha thu a' diùltadh sanasachd phearsantaichte o Microsoft an-dràsta fhèin. Briog </Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_OptedOut_Message2" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_OptedOut_Message2">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>to learn more about your choices.</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value> to learn more about your choices.</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value> airson barrachd fiosrachaidh air na roghainnean.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_OptedOut_Message_Here" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_OptedOut_Message_Here">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>here</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>here</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>an-seo</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_OptInSwitch_Header" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_OptInSwitch_Header">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Let Microsoft Advertising use my information to personalize ads in this app.</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Let Microsoft Advertising use my information to personalise ads in this app.</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Cleachdaidh Microsoft Advertising am fiosrachadh agam ach am faigh mi sanasachd phearsantaichte san aplacaid seo.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_OptInSwitch_Off" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_OptInSwitch_Off">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>No</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>No</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Chan eil</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_OptInSwitch_On" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_OptInSwitch_On">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Yes</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Yes</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Tha</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_Privacy" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_Privacy">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Privacy Statement</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Privacy Statement</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Aithris na prìobhaideachd</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_SectionName" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_SectionName">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Advertising settings</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Advertising Settings</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Roghainnean na sanasachd</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_SignInPrompt1" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_SignInPrompt1">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>You are currently signed out.</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>You are currently signed out. </Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Chan eil thu clàraichte a-staigh an-dràsta fhèin. </Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_SignInPrompt2" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_SignInPrompt2">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>to enable personalized advertising in this app.</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value> to enable personalised advertising in this app.</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value> airson sanasachd phearsantaichte a chur an comas san aplacaid seo.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_SignInPrompt_SignIn" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_SignInPrompt_SignIn">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Sign-in</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Sign in</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Clàraich a-steach</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_SignInPrompt_SignOut" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_SignInPrompt_SignOut">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Sign-out</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Sign out</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Clàraich a-mach</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_StatusUnknown_Message" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_StatusUnknown_Message">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Your Microsoft account information is currently unavailable.</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Your Microsoft account information is currently unavailable.</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Chan eil fiosrachadh a' chunntais Microsoft agad ri làimh an-dràsta fhèin.</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="AdSettings_Flyout_Title" uri="ms-resource://52891Speedydown.112Frysln/MicrosoftAdvertising/UIStrings/AdSettings_Flyout_Title">
-					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
-						<Value>Advertising</Value>
-					</Candidate>
-					<Candidate qualifiers="Language-EN-GB" isDefault="true" type="String">
-						<Value>Advertising</Value>
-					</Candidate>
-					<Candidate type="String">
-						<Value>Sanasachd</Value>
+						<Value>Learn more</Value>
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
