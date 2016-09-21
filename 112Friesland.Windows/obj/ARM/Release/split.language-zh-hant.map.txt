@@ -1,7 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"split.language-zh-hant"
-"ResourceDimensions"		"language-zh-tw"
-"ResourceDimensions"		"language-zh-hk"
-
-[Files]
-"C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\obj\ARM\Release\split.language-zh-hant.pri"			"resources.pri"

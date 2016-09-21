@@ -1,6 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"split.language-nb"
-"ResourceDimensions"		"language-nb-no"
-
-[Files]
-"C:\Users\speed\Documents\GitHub\112Friesland\112Friesland.Windows\obj\x64\Release\split.language-nb.pri"			"resources.pri"

@@ -1,6 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"split.language-ky-cyrl"
-"ResourceDimensions"		"language-ky-kg"
-
-[Files]
-"C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\obj\Release\split.language-ky-cyrl.pri"			"resources.pri"

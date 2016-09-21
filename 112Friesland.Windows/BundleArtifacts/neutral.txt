@@ -1,3 +1,0 @@
-MainPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Release\112Friesland.Windows_1.1.0.14_Bundle\112Friesland.Windows_1.1.0.14_AnyCPU.appx
-SymbolPackage=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\AppPackages\112Friesland.Windows_1.1.0.14_Test\112Friesland.Windows_1.1.0.14_AnyCPU.appxsym
-ResourcePack=C:\Users\Teake\Documents\GitHub\112Friesland\112Friesland.Windows\bin\Release\112Friesland.Windows_1.1.0.14_Bundle\112Friesland.Windows_1.1.0.14_scale-180.appx

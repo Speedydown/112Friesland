@@ -1,4 +1,0 @@
-C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\_112FrieslandBackgroundWP.csproj;arm
-C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\112Friesland.csproj;arm
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;arm
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\112FrieslandLogic.csproj;arm
