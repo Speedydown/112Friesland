@@ -23,3 +23,4 @@ C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\XamlCon
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\112FrieslandLogic.dll
 C:\Users\Teake\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\112FrieslandLogic.pdb
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\Debug\112FrieslandLogic.csprojResolveAssemblyReference.cache

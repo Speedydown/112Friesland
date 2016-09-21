@@ -1,8 +1,11 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112frieslandlogic\bin\x86\debug\112frieslandlogic.dll" HashGuid="33adde85-b6bf-7172-61eb-b1158a2ed159" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\baselogic\bin\x86\debug\baselogic.dll" HashGuid="91ded98d-3a04-4226-6d78-7c71e1167c04" />
-    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\_112frieslandbackgroundw\bin\debug\_112frieslandbackgroundw.winmd" HashGuid="4b2b629b-cee3-00d5-783e-ae4989924628" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\112frieslandlogic\bin\x86\debug\112frieslandlogic.dll" HashGuid="62e4f18e-b938-0576-3cd7-cfb498255628" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\win10apps.baselogic.1.0.3\lib\baselogic.dll" HashGuid="2fb9e39b-6e0b-f996-dd5e-3f9411cae082" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\newtonsoft.json.9.0.1\lib\portable-net45+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="424e6aa8-ba94-c678-e707-af9fe9838e1a" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\xam.plugins.settings.2.1.0\lib\win8\plugin.settings.abstractions.dll" HashGuid="2b0e2d63-0984-03e6-e1dc-77d16c51778c" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\win10apps.nl\112 nederland\packages\xam.plugins.settings.2.1.0\lib\win8\plugin.settings.dll" HashGuid="26f3d346-7a59-3cd8-0ef4-1467b0f8acfc" />
+    <ReferenceAssembly PathName="c:\users\speed\documents\github\112friesland\_112frieslandbackgroundw\bin\x86\debug\_112frieslandbackgroundw.winmd" HashGuid="1115685d-5612-4ed7-e2dc-72a89f75ad5d" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

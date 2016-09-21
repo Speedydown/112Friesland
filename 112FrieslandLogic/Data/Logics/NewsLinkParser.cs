@@ -72,7 +72,7 @@ namespace _112FrieslandLogic.Data
 
         private static NewsLink GetNewsLinkFromHTMLSource(string Source)
         {
-            Source = RemoveHeader(Source, "<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=");
+            Source = RemoveHeader(Source, "<ul class=\"recent__info\">");
             string Date = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\" itemprop=\"datePublished\" datetime=", "</li>", Source, out Source);
             string Author = HTMLParserUtil.GetContentAndSubstringInput("rel=\"author\">", "</a></u>", Source, out Source);
             //string Region = HTMLParserUtil.GetContentAndSubstringInput("<li class=\"recent__info-item\">", "</li>", Source, out Source);

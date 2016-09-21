@@ -27,3 +27,6 @@ C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\qualifiers.txt
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Teake\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\_112FrieslandBackgroundWP.csprojResolveAssemblyReference.cache
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\_112FrieslandBackgroundWP.winmdobj
+C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\obj\Debug\_112FrieslandBackgroundWP.compile.pdb

@@ -53,17 +53,6 @@
       <InProcessServer>
         <Path>CLRHost.dll</Path>
         <ActivatableClass ActivatableClassId="_112FrieslandBackgroundWP.BackgroundTask" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.BadgeHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.NotificationHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.TileXmlHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.Settings.ToggleSwitchSetting" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="WRCHelperLibrary.Settings.SettingsContainer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.ToastHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsLink" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsPage" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.Data.NewsLinkParser" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.NotificationDataHandler" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="_112FrieslandLogic.DataHandler" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
@@ -73,11 +62,11 @@
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhoneApp,Version=v8.1" />
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
-    <build:Item Name="OperatingSystem" Version="10.0.10586.0 (th2_release.151029-1700)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25425.1" />
+    <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25123.0" />
     <build:Item Name="ProjectGUID" Value="{053BCA07-B8F2-4668-93C8-17FCF9760A10}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
-    <build:Item Name="SQLite.WP81" Version="3.12.2" />
+    <build:Item Name="SQLite.WP81" Version="3.11.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>

@@ -2,12 +2,16 @@ C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\112
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\112FrieslandLogic.pdb
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\112FrieslandLogic.pri
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\BaseLogic.dll
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\SQLite.Net.dll
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.dll
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\SQLite.Net.dll
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\SQLite.Net.Platform.WinRT.dll
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\BaseLogic.pdb
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\BaseLogic.pri
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Newtonsoft.Json.xml
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.xml
+C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.Abstractions.xml
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\112FrieslandLogic.csprojResolveAssemblyReference.cache
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\112FrieslandLogic.dll
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\112FrieslandLogic.pdb
@@ -22,7 +26,3 @@ C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\pri
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\qualifiers.txt
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.dll
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.Abstractions.dll
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.xml
-C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\Plugin.Settings.Abstractions.xml

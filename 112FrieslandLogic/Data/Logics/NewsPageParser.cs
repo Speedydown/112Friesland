@@ -39,7 +39,7 @@ namespace _112FrieslandLogic.Data
             string Source = OriginalSource;
             Task<List<string>> ImageTask = Task.Run(() => GetImagesFromSource(Source));
 
-            string Header = HTMLParserUtil.GetContentAndSubstringInput("<h1 class=\"content__title content__title--bottom\">", "</h1>", Source, out Source);
+            string Header = HTMLParserUtil.GetContentAndSubstringInput("itemprop=\"ispartof\" rel=\"bookmark\">", "</a></h2>", Source, out Source);
             Source = RemoveHeader(Source, "itemprop=\"datePublished\"");
             string Date = HTMLParserUtil.GetContentAndSubstringInput(">", "</li>", Source, out Source, "");
 

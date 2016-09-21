@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SPEEDY</Machine>
+    <Machine>DESKTOP-SMGJDCR</Machine>
     <WindowsUser>speed</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
@@ -9,11 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>42dadd9d-92a4-4fb7-803a-6049eb58afe8</PackageIdentityName>
-    <PackageIdentityPublisher>CN=66C50CC1-FBB4-401C-87F4-C13E4975CFAE</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\obj\x86\Debug\</IntermediateOutputPath>
-    <RemoteDeploymentType></RemoteDeploymentType>
-    <PackageRegistrationPath></PackageRegistrationPath>
-    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\AppxManifest.xml">
@@ -28,49 +24,28 @@
     <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112FrieslandLogic\bin\x86\Debug\112FrieslandLogic.dll">
       <PackagePath>112FrieslandLogic.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\BaseLogic.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic.dll">
       <PackagePath>BaseLogic.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Plugin.Settings.dll">
-      <PackagePath>Plugin.Settings.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Plugin.Settings.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\Xam.Plugins.Settings.2.1.0\lib\wpa81\Plugin.Settings.Abstractions.dll">
       <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\WebCrawlerTools.dll">
-      <PackagePath>WebCrawlerTools.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\Xam.Plugins.Settings.2.1.0\lib\wpa81\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
       <PackagePath>SQLite.Net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLite.Net-PCL.3.1.1\lib\portable-win81+wpa81\SQLite.Net.Platform.WinRT.dll">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\SQLite.Net-PCL.3.1.1\lib\portable-win81+wpa81\SQLite.Net.Platform.WinRT.dll">
       <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\Slam-Mix-Marathon\Slam Mix marathon\packages\SQLitePCL.raw_basic.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll">
-      <PackagePath>SQLitePCL.raw.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\WaldnetApp\Waldnet\packages\Xamarin.Forms.2.2.0.45\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll">
-      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\WaldnetApp\Waldnet\packages\Xamarin.Forms.2.2.0.45\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll">
-      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\WaldnetApp\Waldnet\packages\Xamarin.Forms.2.2.0.45\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll">
-      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\_112FrieslandBackgroundWP.winmd">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\x86\Debug\_112FrieslandBackgroundWP.winmd">
       <PackagePath>_112FrieslandBackgroundWP.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\WRCHelperLibrary.winmd">
-      <PackagePath>WRCHelperLibrary.winmd</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\_112FrieslandBackgroundWP\bin\Debug\_112FrieslandLogic.winmd">
-      <PackagePath>_112FrieslandLogic.winmd</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.12.2\Redist\Debug\x86\sqlite3.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.11.1\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\Assets\BadgeLogo.scale-100.png">
@@ -166,9 +141,6 @@
     <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\112Friesland.xr.xml">
       <PackagePath>112Friesland.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\BaseLogic.xr.xml">
-      <PackagePath>BaseLogic\BaseLogic.xr.xml</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\Styles\112FryslanDictionary.xbf">
       <PackagePath>Styles\112FryslanDictionary.xbf</PackagePath>
     </AppxPackagedFile>
@@ -181,16 +153,31 @@
     <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Xaml Controls\DisplayNewsItemControl.xbf">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\BaseLogic.xr.xml">
+      <PackagePath>BaseLogic\BaseLogic.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\DisplayNewsItemControl.xaml">
+      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf">
       <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Xaml Controls\DisplayNewsItemControlWideScreen.xbf">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xaml">
+      <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf">
       <PackagePath>BaseLogic\Xaml Controls\DisplayNewsItemControlWideScreen.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Xaml Controls\LoadingControl.xbf">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\LoadingControl.xaml">
+      <PackagePath>BaseLogic\Xaml Controls\LoadingControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\LoadingControl.xbf">
       <PackagePath>BaseLogic\Xaml Controls\LoadingControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\BaseLogic\bin\x86\Debug\Xaml Controls\SettingsControl.xbf">
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\SettingsControl.xaml">
+      <PackagePath>BaseLogic\Xaml Controls\SettingsControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\win10apps.nl\112 Nederland\packages\win10apps.BaseLogic.1.0.3\lib\BaseLogic\Xaml Controls\SettingsControl.xbf">
       <PackagePath>BaseLogic\Xaml Controls\SettingsControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\speed\Documents\GitHub\112Friesland\112Friesland\bin\x86\Debug\resources.pri">

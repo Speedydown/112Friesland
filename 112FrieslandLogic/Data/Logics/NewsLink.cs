@@ -1,4 +1,5 @@
-﻿using BaseLogic.Xaml_Controls.Interfaces;
+﻿using BaseLogic.HtmlUtil;
+using BaseLogic.Xaml_Controls.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,8 +45,9 @@ namespace _112FrieslandLogic.Data
 
             this.Content = WebUtility.HtmlDecode(Location + Content.Replace("-->\r\n", "").Replace("&#8211;", "-")).Trim().Replace("“", "").Replace("\r", "");
             this.Author = WebUtility.HtmlDecode(Author).Trim();
-            this.Date = WebUtility.HtmlDecode(Date.Split('>')[1].Trim());
-        }
+      this.Date = HTMLParserUtil.CleanHTMLTagsFromString(WebUtility.HtmlDecode(Date.Substring(Date.IndexOf('>') + 1).Trim())).Trim();
+
+    }
 
         public override string ToString()
         {

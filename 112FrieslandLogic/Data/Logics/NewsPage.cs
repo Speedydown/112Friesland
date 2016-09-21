@@ -129,6 +129,8 @@ namespace _112FrieslandLogic.Data
             {
                 this.Date = WebUtility.HtmlDecode(Date).Trim();
             }
+
+      this.Date = HTMLParserUtil.CleanHTMLTagsFromString(this.Date);
         }
 
         private string CleanString(string Input)
