@@ -99,7 +99,15 @@ namespace _112FrieslandLogic.Data
                 }
                 catch
                 {
-                    Location = HTMLParserUtil.GetContentAndSubstringInput("<p>\r\n","- ", Source, out Source, "", false) + "-";
+                    try
+                    {
+                        Location = HTMLParserUtil.GetContentAndSubstringInput("<p>\r\n", "- ", Source, out Source, "", false) + "-";
+                    }
+                    catch
+                    {
+                        Source = Source.Substring(HTMLParserUtil.GetPositionOfStringInHTMLSource("<div class=\"recent__body \" itemprop=\"text\">", Source, true));
+                        Location = HTMLParserUtil.GetContentAndSubstringInput("<p>", "- ", Source, out Source, "– ", false).Trim() + " -";
+                    }
                 }
 
                 try
@@ -108,7 +116,14 @@ namespace _112FrieslandLogic.Data
                 }
                 catch
                 {
-                    Content = HTMLParserUtil.GetContentAndSubstringInput("- ", "<a href=", Source, out Source);
+                    try
+                    {
+                        Content = HTMLParserUtil.GetContentAndSubstringInput("- ", "<a href=", Source, out Source);
+                    }
+                    catch
+                    {
+                        Content = HTMLParserUtil.GetContentAndSubstringInput("– ", "<a href=", Source, out Source);
+                    }
                 }
             }
 
