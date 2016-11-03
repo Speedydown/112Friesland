@@ -21,7 +21,7 @@ namespace _112FrieslandLogic
 
         private static async Task<IList<NewsLink>> GetNewsLinksByPageHelper(int PageNumber)
         {
-            string PageSource = await GetDataFromURL("http://www.112fryslan.nl/page/" + PageNumber);
+            string PageSource = await GetDataFromURL("https://www.112fryslan.nl/page/" + PageNumber);
             return NewsLinkParser.GetNewsLinksFromSource(PageSource);
         }
 
